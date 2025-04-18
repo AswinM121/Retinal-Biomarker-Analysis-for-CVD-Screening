@@ -105,7 +105,7 @@ ELSE:
 ### Steps
 1. **Clone Repository**:
    ```bash
-   https://github.com/Aswin-programmer/Dual-Parameter-Retinal-Biomarker-Analysis-for-Cardio-Vascular-Disease-Screening.git
+   git clone https://github.com/AswinM121/Retinal-Biomarker-Analysis-for-CVD-Screening.git
    ```
 
 2. **Create and Activate Virtual Environment** (optional but recommended):
