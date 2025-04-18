@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}" class="active">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="faq-hero">
+            <div class="faq-hero-content">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our CVD risk assessment system</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-grid">
+                <div class="faq-category">
+                    <h2>About the Assessment</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is retinal image-based CVD risk assessment?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our system uses advanced AI technology to analyze retinal images and detect early signs of cardiovascular disease. The retina provides a unique window into your body's vascular health, allowing for non-invasive risk assessment.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How accurate is the assessment?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our system achieves over 92% overall accuracy in risk assessment, with 97.4% accuracy in vessel segmentation and 89.6% sensitivity in detecting vascular abnormalities. These results have been validated across multiple datasets.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does the assessment take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The entire process typically takes about 3-5 minutes, including image upload and analysis. Results are available immediately after processing is complete.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2>Technical Details</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What biomarkers do you analyze?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We analyze three key biomarkers:</p>
+                            <ul>
+                                <li>Arteriovenous Ratio (AVR) - Indicates vascular health</li>
+                                <li>Cup-to-Disc Ratio (CDR) - Evaluates optic nerve health</li>
+                                <li>Fractal Dimension (FD) - Measures vascular network complexity</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What image quality is required?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For optimal results, we recommend high-resolution retinal fundus images that are well-focused and properly centered. Our system includes image enhancement techniques to improve quality, but better input images lead to more accurate results.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my data secure?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we take data security seriously. All uploaded images and analysis results are encrypted and processed securely. We comply with healthcare data protection standards and do not share your information with third parties.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2>Using the System</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I get started?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Getting started is easy:</p>
+                            <ol>
+                                <li>Click on the "Assessment" link in the navigation</li>
+                                <li>Upload your retinal fundus image</li>
+                                <li>Wait for the analysis to complete</li>
+                                <li>Review your comprehensive risk assessment report</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What file formats are supported?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We support common image formats including:</p>
+                            <ul>
+                                <li>JPEG (.jpg, .jpeg)</li>
+                                <li>PNG (.png)</li>
+                                <li>TIFF (.tiff, .tif)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I save or download my results?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, after the assessment is complete, you can download a detailed PDF report containing all analysis results, biomarker measurements, and risk assessments. You can also save the processed images showing vessel segmentation and classification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-cta">
+            <div class="cta-content">
+                <h2>Still Have Questions?</h2>
+                <p>Our team is here to help you understand our technology and its benefits</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Contact Us</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                    <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@cvdassessment.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CVD Risk Assessment. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add click event listeners to FAQ questions
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+                
+                // Toggle icon rotation
+                icon.style.transform = icon.style.transform === 'rotate(180deg)' ? 'rotate(0)' : 'rotate(180deg)';
+                
+                // Toggle active state
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

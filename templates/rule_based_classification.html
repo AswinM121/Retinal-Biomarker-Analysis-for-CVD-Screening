@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule-Based Classification - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .rule-section {
+            padding: 2rem;
+            margin: 2rem 0;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .equation {
+            background: #f5f5f5;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .step-box {
+            border-left: 4px solid #007bff;
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+        .rule-section h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .learn-more {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .learn-more i {
+            margin-left: 0.3rem;
+            transition: transform 0.2s;
+        }
+        .learn-more:hover i {
+            transform: translateX(3px);
+        }
+        .step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="rule-section">
+            <h1>Rule-Based Classification for CVD Risk Assessment</h1>
+            
+            <div class="step-box">
+                <h2>Introduction to Rule-Based Classification</h2>
+                <p>Here, we present the rule-based classification framework intended for Cardiovascular Disease 
+                (CVD) Risk Assessment based on retinal biomarkers. Unlike machine learning models that need 
+                a large amount of labeled data, rule-based classification offers an interpretable and deterministic 
+                method based on pre-defined conditions from medical expertise. Our framework combines 
+                multiple ophthalmic biomarkers (OBM) and vessel-based measures like Artery-to-Vein Ratio 
+                (AVR), Cup-to-Disc Ratio (CDR), and Fractal Dimension (FD) to classify individuals into high 
+                or low-risk groups.</p>
+            </div>
+
+            <div class="step-box">
+                <h2>Rule-Based Classification Algorithm</h2>
+                <p>The classification system follows a stepwise decision-making process to determine CVD risk.</p>
+
+                <div class="step-header">
+                    <h3>Step 1: Define Ophthalmic Biomarkers (OBM)</h3>
+                    <a href="{{ url_for('obm_details') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p>High-risk ophthalmic biomarkers include retinal abnormalities strongly associated with 
+                cardiovascular conditions. The presence of any of these biomarkers is a direct indicator of high 
+                CVD risk, as expressed in Equation:</p>
+                <div class="equation">
+                    OBM = BDR ∪ PDR ∪ CNV ∪ ASR ∪ HR ∪ CRVO ∪ BRVO ∪ HCRVO ∪ CRAO ∪ BRAO ∪ MA
+                </div>
+
+                <div class="step-header">
+                    <h3>Step 2: Define AVR Condition</h3>
+                    <a href="{{ url_for('avr_details') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p>Artery-to-Vein Ratio (AVR) is a key vascular parameter, with values outside the normal range 
+                (0.67 - 0.75) indicating potential cardiovascular risk. The condition is mathematically defined in 
+                Equation:</p>
+                <div class="equation">
+                    AVFlag = 1, if AVR < 0.67 or AVR > 0.75
+                    AVFlag = 0, otherwise
+                </div>
+
+                <div class="step-header">
+                    <h3>Step 3: Define CDR Condition</h3>
+                    <a href="{{ url_for('cdr_details') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p>Cup-to-Disc Ratio (CDR) helps assess optic disc morphology. A CDR greater than 0.6 suggests 
+                a possible underlying health issue, as shown in Equation:</p>
+                <div class="equation">
+                    CDRFlag = 1, if CDR > 0.6
+                    CDRFlag = 0, otherwise
+                </div>
+
+                <div class="step-header">
+                    <h3>Step 4: Define Fractal Dimension (FD) Condition</h3>
+                    <a href="{{ url_for('fd_details') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p>Fractal Dimension (FD) measures the complexity of the vascular structure. An FD value below 
+                1.3 suggests vessel abnormalities related to cardiovascular risks. The condition is mathematically 
+                described in Equation:</p>
+                <div class="equation">
+                    FDFlag = 1, if FD < 1.3
+                    FDFlag = 0, otherwise
+                </div>
+
+                <div class="step-header">
+                    <h3>Step 5: Define Neutral Biomarkers (NBM)</h3>
+                    <a href="{{ url_for('obm_details') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <p>Neutral biomarkers are retinal conditions that do not directly indicate cardiovascular issues but 
+                may still be present. The set of neutral biomarkers is defined in Equation:</p>
+                <div class="equation">
+                    NBM = Normal ∪ Coat-Disease ∪ Drusen
+                </div>
+
+                <h3>Step 6: Compute CVD Risk Based on Conditions</h3>
+                <h4>Rule 1: Direct High-Risk Condition</h4>
+                <p>If an individual has any high-risk ophthalmic biomarker (OBM), they are classified as high 
+                risk, as per Equation:</p>
+                <div class="equation">
+                    if OBM = 1, CVDRisk = 1
+                </div>
+
+                <h4>Rule 2: Normal Features + Only Neutral Biomarkers → Low Risk</h4>
+                <p>If no abnormalities exist and only neutral biomarkers are present, the individual is classified as 
+                low risk, as given in Equation:</p>
+                <div class="equation">
+                    if (NBM = 1) and (AVR, CDR, FD are normal), then CVDRisk = 0
+                </div>
+
+                <h4>Rule 3: Neutral Biomarkers + Abnormal Retinal Features → High Risk</h4>
+                <p>If an individual has neutral biomarkers but exhibits any abnormal retinal feature, they are 
+                classified as high risk, as described in Equation:</p>
+                <div class="equation">
+                    if (NBM = 1) and (AVFlag = 1 ∪ CDRFlag = 1 ∪ FDFlag = 1), then CVDRisk = 1
+                </div>
+
+                <h4>Rule 4: No Neutral Biomarkers + Any Abnormal Feature → High Risk</h4>
+                <p>If an individual has no neutral biomarkers and any of the abnormal features, they are classified 
+                as high risk, as shown in Equation:</p>
+                <div class="equation">
+                    if (NBM = 0) and (AVFlag = 1 ∪ CDRFlag = 1 ∪ FDFlag = 1), then CVDRisk = 1
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                    <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@cvdassessment.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CVD Risk Assessment. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

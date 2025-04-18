@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBM Details - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/section-headers.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .obm-details {
+            padding-top: 80px;
+        }
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+        .container {
+            position: relative;
+        }
+        .biomarker-list {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        .biomarker-category {
+            margin-bottom: 2rem;
+        }
+        .biomarker-category h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+        .condition-list {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+        .condition-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .condition-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="obm-details">
+            <div class="section-header">
+                <i class="fas fa-microscope"></i>
+                <h1>Ophthalmic Biomarkers for Cardiovascular Disease (CVD) Risk Prediction</h1>
+            </div>
+
+            <div class="content-section">
+                <p class="intro">Ophthalmic CVD Indicators are emerging as powerful non-invasive tools for early prediction of cardiovascular risk. This section introduces a novel parameter derived from retinal image classification, enabling risk stratification using key ophthalmic features.</p>
+
+                <div class="process-section">
+                    <h2><i class="fas fa-database"></i> STARE Dataset Categories</h2>
+                    <p>To generate comprehensive feature maps, we use the STARE dataset, which contains retinal fundus images labeled across thirteen diagnostic categories:</p>
+                    <ul class="biomarker-list">
+                        <li>Normal (N)</li>
+                        <li>Coat's Disease (CD)</li>
+                        <li>Macroaneurysm (MA)</li>
+                        <li>Drusen (D)</li>
+                        <li>Background Diabetic Retinopathy (BDR)</li>
+                        <li>Proliferative Diabetic Retinopathy (PDR)</li>
+                        <li>Choroidal Neovascularization (CNV)</li>
+                        <li>Arteriosclerotic Retinopathy (AR)</li>
+                        <li>Hypertensive Retinopathy (HTR)</li>
+                        <li>Central Retinal Vein Occlusion (CRVO)</li>
+                        <li>Branch Retinal Vein Occlusion (BRVO)</li>
+                        <li>Hemi-Central Retinal Vein Occlusion (HCRVO)</li>
+                        <li>Retinal Artery Occlusions (RAO, BRAO)</li>
+                    </ul>
+                    <p class="note">The feature map generated from these labeled categories is integrated into the system's final classification pipeline to improve CVD risk prediction.</p>
+                </div>
+
+                <div class="process-section">
+                    <h2><i class="fas fa-dna"></i> Retinal Biomarkers and Their Link to CVD</h2>
+                    <p>Retinal abnormalities serve as biomarkers that often correlate with underlying cardiovascular issues. Key insights from literature and clinical data support the inclusion of the following conditions as significant predictors:</p>
+
+                    <div class="biomarker-category">
+                        <h3>Hypertensive and Arteriosclerotic Retinopathy</h3>
+                        <ul class="condition-list">
+                            <li>Hypertensive Retinopathy (HTR)</li>
+                            <li>Arteriosclerotic Retinopathy (AR)</li>
+                        </ul>
+                        <p>Indicate long-standing vascular stress and hypertension, both strong contributors to cardiovascular disease risk.</p>
+                    </div>
+
+                    <div class="biomarker-category">
+                        <h3>Diabetic Retinopathy</h3>
+                        <ul class="condition-list">
+                            <li>Background Diabetic Retinopathy (BDR)</li>
+                            <li>Proliferative Diabetic Retinopathy (PDR)</li>
+                        </ul>
+                        <p>Reflect microvascular damage often associated with systemic diabetes and cardiovascular complications.</p>
+                    </div>
+
+                    <div class="biomarker-category">
+                        <h3>Choroidal Neovascularization</h3>
+                        <ul class="condition-list">
+                            <li>Choroidal Neovascularization (CNV)</li>
+                        </ul>
+                        <p>Signals systemic vascular anomalies and increases the likelihood of cardiovascular disorders.</p>
+                    </div>
+
+                    <div class="biomarker-category">
+                        <h3>Retinal Vein and Artery Occlusions</h3>
+                        <ul class="condition-list">
+                            <li>Central Retinal Vein Occlusion (CRVO)</li>
+                            <li>Branch Retinal Vein Occlusion (BRVO)</li>
+                            <li>Hemi-Central Retinal Vein Occlusion (HCRVO)</li>
+                            <li>Retinal Artery Occlusions (RAO, BRAO)</li>
+                        </ul>
+                        <p>Indicate thrombotic events and impaired retinal blood flow, which may correlate with stroke risk, atherosclerosis, and heart disease.</p>
+                    </div>
+
+                    <div class="biomarker-category">
+                        <h3>Macroaneurysms(MA)</h3>
+                        <p>Macroaneurysms are large aneurysms that occur in the retinal vasculature and are associated with an increased risk of cardiovascular disease (CVD). Additionally, macroaneurysms may also be a sign of increased blood pressure and flow in the retinal vasculature, which can further contribute to the development of CVD.</p>
+                    </div>
+
+                    <p class="note">These biomarkers form the Ophthalmic Biomarker Module (OBM) of the overall system and are crucial for accurate, image-based cardiovascular risk assessment. Other than these the remaining biomarkers such as Coat's Disease(CD), Drusen(D), Normal(N) which are actually not related to CVD and they are grouped under Neutral Biomakers(NBM). More reference can be found in the Research Background section of the about page. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>&copy; 2024 CVD Risk Assessment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

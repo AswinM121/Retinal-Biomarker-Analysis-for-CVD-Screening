@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Details - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/section-headers.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fd-details {
+            padding-top: 80px;
+        }
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+        .container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="fd-details">
+            <div class="section-header">
+                <i class="fas fa-chart-bar"></i>
+                <h1>Fractal Dimension (FD) Analysis for CVD Risk Assessment</h1>
+            </div>
+
+            <div class="content-section">
+                <h2><i class="fas fa-info-circle"></i> What is Fractal Dimension?</h2>
+                <p>Fractal Dimension is a non-integer metric that quantifies the complexity and density of retinal vascular branching, capturing self-similarity in vessel patterns.</p>
+
+                <h2><i class="fas fa-exclamation-circle"></i> Why it Matters</h2>
+                <div class="threshold-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>FD Value</th>
+                                <th>Interpretation</th>
+                                <th>Clinical Significance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="nomal">
+                                <td>Higher FD (> 1.3)</td>
+                                <td>Dense, healthy microvascular networks</td>
+                                <td>Indicates good vascular health</td>
+                            </tr>
+                            <tr class="high">
+                                <td>Lower FD (≤ 1.3)</td>
+                                <td>Rarefied, potentially diseased vasculature</td>
+                                <td>May indicate hypertension or cardiovascular disease risk</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2><i class="fas fa-microscope"></i> Methodology Highlights</h2>
+                <div class="methodology-grid">
+                    <div class="method-card">
+                        <h3><i class="fas fa-th"></i> Box Counting</h3>
+                        <p>Overlays grids to count vessel-filled cells at multiple scales</p>
+                    </div>
+                    <div class="method-card">
+                        <h3><i class="fas fa-expand-arrows-alt"></i> Minkowski–Bouligand</h3>
+                        <p>Dilates vessels and tracks area growth</p>
+                    </div>
+                    <div class="method-card">
+                        <h3><i class="fas fa-bullseye"></i> Sandbox</h3>
+                        <p>Measures pixel count within expanding regions around vessel points</p>
+                    </div>
+                </div>
+
+                <h2><i class="fas fa-lightbulb"></i> Key Insight</h2>
+                <div class="insight-box">
+                    <p>Minkowski–Bouligand yields the most accurate FD values with lowest MAE. A strong positive correlation (r ≈ 0.97) was found between FD and vessel density, reinforcing FD's role as a reliable biomarker for CVD.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>&copy; 2024 CVD Risk Assessment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

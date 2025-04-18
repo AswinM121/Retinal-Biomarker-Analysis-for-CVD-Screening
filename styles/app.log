@@ -1,0 +1,1443 @@
+2025-03-24 11:57:07,257 - __main__ - INFO - Loading models...
+2025-03-24 11:57:08,213 - __main__ - ERROR - Error loading models: [Errno 2] No such file or directory: 'models\\cup_model.pt'
+2025-03-24 11:58:38,211 - __main__ - INFO - Loading models...
+2025-03-24 11:58:38,467 - __main__ - INFO - Models loaded successfully
+2025-03-24 11:58:38,498 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 11:58:38,500 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 11:58:38,503 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 11:58:46,172 - __main__ - INFO - Loading models...
+2025-03-24 11:58:46,395 - __main__ - INFO - Models loaded successfully
+2025-03-24 11:58:46,409 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 11:58:46,436 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 11:58:50,645 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:58:50] "GET / HTTP/1.1" 200 -
+2025-03-24 11:58:50,744 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:58:50] "[33mGET /placeholder.svg HTTP/1.1[0m" 404 -
+2025-03-24 11:58:51,002 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:58:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-24 11:58:51,386 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:58:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-24 11:59:22,618 - __main__ - INFO - Calculating CDR for static/uploads\07.jpg
+2025-03-24 11:59:26,663 - __main__ - INFO - CDR calculation completed in 4.04 seconds. CDR: 0.369
+2025-03-24 11:59:26,663 - __main__ - INFO - Looking up AVR and FD for image: 07
+2025-03-24 11:59:26,696 - __main__ - INFO - Retrieved AVR: 0.6859355685590546, FD: 1.351
+2025-03-24 11:59:26,697 - __main__ - INFO - Looking for process images for: 07
+2025-03-24 11:59:26,699 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/07.jpg
+2025-03-24 11:59:26,700 - __main__ - INFO - Found av_class image: H/av_classification/07.png
+2025-03-24 11:59:26,701 - __main__ - INFO - Found fd image: H/fd/07.png
+2025-03-24 11:59:26,749 - __main__ - INFO - Applying CLAHE to static/uploads\07.jpg
+2025-03-24 11:59:26,792 - __main__ - INFO - CLAHE image saved to static/results\clahe_07.png
+2025-03-24 11:59:26,894 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:26] "POST /upload HTTP/1.1" 200 -
+2025-03-24 11:59:26,974 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 11:59:26,987 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:26] "GET /static/results/overlay_07.png HTTP/1.1" 200 -
+2025-03-24 11:59:27,002 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:27] "GET /static/results/disc_07.png HTTP/1.1" 200 -
+2025-03-24 11:59:27,006 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:27] "GET /static/H/av_classification/07.png HTTP/1.1" 200 -
+2025-03-24 11:59:27,042 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:27] "GET /static/H/vessel_segmentation/07.jpg HTTP/1.1" 200 -
+2025-03-24 11:59:27,061 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:27] "GET /static/uploads/07.jpg HTTP/1.1" 200 -
+2025-03-24 11:59:27,069 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:27] "GET /static/results/cup_07.png HTTP/1.1" 200 -
+2025-03-24 11:59:27,110 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 11:59:27] "GET /static/results/clahe_07.png HTTP/1.1" 200 -
+2025-03-24 12:00:02,392 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 12:00:02] "GET / HTTP/1.1" 200 -
+2025-03-24 12:00:02,469 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 12:00:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 12:00:02,470 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 12:00:02] "[33mGET /placeholder.svg HTTP/1.1[0m" 404 -
+2025-03-24 13:12:26,473 - __main__ - INFO - Loading models...
+2025-03-24 13:12:26,786 - __main__ - INFO - Models loaded successfully
+2025-03-24 13:12:26,855 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 13:12:26,856 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 13:12:26,860 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 13:12:34,585 - __main__ - INFO - Loading models...
+2025-03-24 13:12:34,798 - __main__ - INFO - Models loaded successfully
+2025-03-24 13:12:34,812 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 13:12:34,843 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 13:12:35,335 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:12:35] "GET / HTTP/1.1" 200 -
+2025-03-24 13:12:35,415 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:12:35] "[33mGET /placeholder.svg HTTP/1.1[0m" 404 -
+2025-03-24 13:12:35,620 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:12:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 13:12:35,859 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:12:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-24 13:12:58,627 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 13:13:02,677 - __main__ - INFO - CDR calculation completed in 4.05 seconds. CDR: 0.188
+2025-03-24 13:13:02,678 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 13:13:02,744 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 13:13:02,747 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 13:13:02,748 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 13:13:02,749 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 13:13:02,750 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 13:13:02,792 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 13:13:02,837 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 13:13:02,900 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:02] "POST /upload HTTP/1.1" 200 -
+2025-03-24 13:13:02,979 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 13:13:02,998 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:02] "GET /static/results/cup_01.png HTTP/1.1" 200 -
+2025-03-24 13:13:03,000 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:02] "GET /static/results/disc_01.png HTTP/1.1" 200 -
+2025-03-24 13:13:03,030 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:03] "GET /static/H/av_classification/01.png HTTP/1.1" 200 -
+2025-03-24 13:13:03,036 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:03] "GET /static/H/vessel_segmentation/01.png HTTP/1.1" 200 -
+2025-03-24 13:13:03,040 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:03] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-24 13:13:03,111 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:03] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-24 13:13:03,127 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:03] "GET /static/results/overlay_01.png HTTP/1.1" 200 -
+2025-03-24 13:13:24,608 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:24] "GET / HTTP/1.1" 200 -
+2025-03-24 13:13:24,686 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:24] "[33mGET /placeholder.svg HTTP/1.1[0m" 404 -
+2025-03-24 13:13:24,688 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 13:13:35,833 - __main__ - INFO - Calculating CDR for static/uploads\02.jpg
+2025-03-24 13:13:36,578 - __main__ - INFO - CDR calculation completed in 0.74 seconds. CDR: 0.236
+2025-03-24 13:13:36,579 - __main__ - INFO - Looking up AVR and FD for image: 02
+2025-03-24 13:13:36,587 - __main__ - INFO - Retrieved AVR: 0.6758918872862321, FD: 1.416
+2025-03-24 13:13:36,590 - __main__ - INFO - Looking for process images for: 02
+2025-03-24 13:13:36,592 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/02.jpg
+2025-03-24 13:13:36,593 - __main__ - INFO - Found av_class image: H/av_classification/02.png
+2025-03-24 13:13:36,595 - __main__ - INFO - Found fd image: H/fd/02.png
+2025-03-24 13:13:36,643 - __main__ - INFO - Applying CLAHE to static/uploads\02.jpg
+2025-03-24 13:13:36,695 - __main__ - INFO - CLAHE image saved to static/results\clahe_02.png
+2025-03-24 13:13:36,697 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "POST /upload HTTP/1.1" 200 -
+2025-03-24 13:13:36,782 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 13:13:36,793 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/results/overlay_02.png HTTP/1.1" 200 -
+2025-03-24 13:13:36,798 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/H/av_classification/02.png HTTP/1.1" 200 -
+2025-03-24 13:13:36,807 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/results/disc_02.png HTTP/1.1" 200 -
+2025-03-24 13:13:36,814 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/results/cup_02.png HTTP/1.1" 200 -
+2025-03-24 13:13:36,866 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/H/vessel_segmentation/02.jpg HTTP/1.1" 200 -
+2025-03-24 13:13:36,878 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/uploads/02.jpg HTTP/1.1" 200 -
+2025-03-24 13:13:36,918 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:36] "GET /static/results/clahe_02.png HTTP/1.1" 200 -
+2025-03-24 13:13:56,469 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:56] "GET / HTTP/1.1" 200 -
+2025-03-24 13:13:56,528 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 13:13:56,536 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 13:13:56] "[33mGET /placeholder.svg HTTP/1.1[0m" 404 -
+2025-03-24 14:16:26,895 - __main__ - INFO - Loading models...
+2025-03-24 14:16:27,258 - __main__ - INFO - Models loaded successfully
+2025-03-24 14:16:27,320 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 14:16:27,320 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 14:16:27,327 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 14:16:36,948 - __main__ - INFO - Loading models...
+2025-03-24 14:16:37,304 - __main__ - INFO - Models loaded successfully
+2025-03-24 14:16:37,337 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 14:16:37,374 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 14:16:37,855 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:16:37] "GET / HTTP/1.1" 200 -
+2025-03-24 14:16:37,960 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:16:37] "[33mGET /placeholder.svg HTTP/1.1[0m" 404 -
+2025-03-24 14:16:38,173 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:16:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 14:16:38,487 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:16:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-24 14:18:32,690 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 14:18:37,050 - __main__ - INFO - CDR calculation completed in 4.35 seconds. CDR: 0.188
+2025-03-24 14:18:37,050 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 14:18:37,082 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 14:18:37,082 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 14:18:37,082 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 14:18:37,095 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 14:18:37,095 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 14:18:37,151 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 14:18:37,199 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 14:18:37,244 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "POST /upload HTTP/1.1" 200 -
+2025-03-24 14:18:37,312 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 14:18:37,328 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "GET /static/results/disc_01.png HTTP/1.1" 200 -
+2025-03-24 14:18:37,328 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-24 14:18:37,344 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-24 14:18:37,352 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "GET /static/results/cup_01.png HTTP/1.1" 200 -
+2025-03-24 14:18:37,352 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-24 14:18:37,363 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "GET /static/results/overlay_01.png HTTP/1.1" 200 -
+2025-03-24 14:18:37,406 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 14:18:37] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-24 22:04:17,808 - __main__ - INFO - Loading models...
+2025-03-24 22:04:18,166 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:04:18,192 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 22:04:18,192 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 22:04:18,196 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 22:04:26,739 - __main__ - INFO - Loading models...
+2025-03-24 22:04:26,971 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:04:26,998 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 22:04:27,019 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 22:04:27,454 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:04:27] "GET / HTTP/1.1" 200 -
+2025-03-24 22:04:27,832 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:04:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-24 22:04:28,185 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:04:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-24 22:05:02,323 - __main__ - INFO - Calculating CDR for static/uploads\02.jpg
+2025-03-24 22:05:05,958 - __main__ - INFO - CDR calculation completed in 3.64 seconds. CDR: 0.236
+2025-03-24 22:05:05,959 - __main__ - INFO - Looking up AVR and FD for image: 02
+2025-03-24 22:05:05,990 - __main__ - INFO - Retrieved AVR: 0.6758918872862321, FD: 1.416
+2025-03-24 22:05:05,991 - __main__ - INFO - Looking for process images for: 02
+2025-03-24 22:05:05,993 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/02.jpg
+2025-03-24 22:05:05,994 - __main__ - INFO - Found av_class image: H/av_classification/02.png
+2025-03-24 22:05:05,997 - __main__ - INFO - Found fd image: H/fd/02.png
+2025-03-24 22:05:06,059 - __main__ - INFO - Applying CLAHE to static/uploads\02.jpg
+2025-03-24 22:05:06,113 - __main__ - INFO - CLAHE image saved to static/results\clahe_02.png
+2025-03-24 22:05:06,139 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:06] "POST /upload HTTP/1.1" 200 -
+2025-03-24 22:05:06,209 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:06] "[33mGET /static/ HTTP/1.1[0m" 404 -
+2025-03-24 22:05:06,225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:05:06,243 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:06] "[36mGET /static/H/av_classification/02.png HTTP/1.1[0m" 304 -
+2025-03-24 22:05:06,261 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:06] "[36mGET /static/H/vessel_segmentation/02.jpg HTTP/1.1[0m" 304 -
+2025-03-24 22:05:06,280 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:06] "GET /static/results/overlay_02.png HTTP/1.1" 200 -
+2025-03-24 22:05:37,180 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:37] "GET / HTTP/1.1" 200 -
+2025-03-24 22:05:37,249 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:05:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:17:19,949 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-24 22:17:21,150 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 22:17:28,713 - __main__ - INFO - Loading models...
+2025-03-24 22:17:28,959 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:17:28,962 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 22:17:28,999 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 22:19:04,176 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:04] "GET / HTTP/1.1" 200 -
+2025-03-24 22:19:04,407 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:04] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-24 22:19:20,150 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 22:19:23,256 - __main__ - INFO - CDR calculation completed in 3.11 seconds. CDR: 0.188
+2025-03-24 22:19:23,257 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 22:19:23,273 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 22:19:23,275 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 22:19:23,276 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 22:19:23,277 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 22:19:23,278 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 22:19:23,322 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 22:19:23,353 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 22:19:23,403 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:23] "POST /upload HTTP/1.1" 200 -
+2025-03-24 22:19:23,480 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:19:23,490 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:23] "GET /static/H/av_classification/01.png HTTP/1.1" 200 -
+2025-03-24 22:19:23,501 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:23] "GET /static/results/overlay_01.png HTTP/1.1" 200 -
+2025-03-24 22:19:23,505 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:23] "[33mGET /static/ HTTP/1.1[0m" 404 -
+2025-03-24 22:19:23,523 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:23] "GET /static/H/vessel_segmentation/01.png HTTP/1.1" 200 -
+2025-03-24 22:19:56,526 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:56] "GET / HTTP/1.1" 200 -
+2025-03-24 22:19:56,593 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:19:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:21:05,889 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:05] "GET / HTTP/1.1" 200 -
+2025-03-24 22:21:05,959 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:21:33,649 - __main__ - INFO - Loading models...
+2025-03-24 22:21:33,880 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:21:33,905 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-24 22:21:33,905 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 22:21:33,905 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 22:21:40,713 - __main__ - INFO - Loading models...
+2025-03-24 22:21:41,055 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:21:41,065 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 22:21:41,114 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 22:21:46,402 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:46] "GET / HTTP/1.1" 200 -
+2025-03-24 22:21:46,623 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:21:47,364 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:47] "GET / HTTP/1.1" 200 -
+2025-03-24 22:21:47,481 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:21:48,169 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:48] "GET / HTTP/1.1" 200 -
+2025-03-24 22:21:48,232 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:21:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:23:35,305 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-24 22:23:36,065 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 22:23:45,683 - __main__ - INFO - Loading models...
+2025-03-24 22:23:45,935 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:23:45,962 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 22:23:46,001 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 22:24:26,324 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:24:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-24 22:24:26,682 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:24:26] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-24 22:24:26,718 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:24:26] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-24 22:24:26,816 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:24:26] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1" 200 -
+2025-03-24 22:24:26,846 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:24:26] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-24 22:28:22,345 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:22] "GET / HTTP/1.1" 200 -
+2025-03-24 22:28:22,410 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:28:38,063 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:38] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:28:38,151 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:38] "GET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-24 22:28:38,162 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:38] "GET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-24 22:28:38,203 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:38] "GET /about?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1" 200 -
+2025-03-24 22:28:38,256 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:38] "GET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-24 22:28:44,061 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:44] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:28:44,140 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:28:48,523 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:48] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:28:48,613 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:48] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:28:48,615 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:48] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:28:48,668 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:48] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:28:53,780 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:53] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:28:53,843 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:28:57,622 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:57] "[35m[1mGET /who-we-serve HTTP/1.1[0m" 500 -
+2025-03-24 22:28:57,719 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:57] "GET /who-we-serve?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-24 22:28:57,719 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:57] "GET /who-we-serve?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-24 22:28:57,813 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:57] "GET /who-we-serve?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1" 200 -
+2025-03-24 22:28:57,839 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:28:57] "GET /who-we-serve?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-24 22:29:01,662 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:01] "GET /faq HTTP/1.1" 200 -
+2025-03-24 22:29:01,750 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:29:07,764 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:07] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2025-03-24 22:29:07,835 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:07] "GET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-24 22:29:07,835 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:07] "GET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-24 22:29:07,883 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:07] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1" 200 -
+2025-03-24 22:29:07,932 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:07] "GET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-24 22:29:54,775 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:54] "GET /faq HTTP/1.1" 200 -
+2025-03-24 22:29:54,855 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:29:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:30:11,234 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:11] "GET /home HTTP/1.1" 200 -
+2025-03-24 22:30:11,299 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:30:40,089 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:40] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:30:40,163 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:30:52,312 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 22:30:55,713 - __main__ - INFO - CDR calculation completed in 3.40 seconds. CDR: 0.188
+2025-03-24 22:30:55,713 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 22:30:55,743 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 22:30:55,744 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 22:30:55,745 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 22:30:55,747 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 22:30:55,753 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 22:30:55,830 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 22:30:55,884 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 22:30:55,926 - __main__ - ERROR - Upload error: Could not build url for endpoint 'index'. Did you mean 'api_upload_file' instead?
+2025-03-24 22:30:55,989 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:55] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-03-24 22:30:56,069 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:56] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-24 22:30:56,091 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:56] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-24 22:30:56,158 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:30:56] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1" 200 -
+2025-03-24 22:31:10,389 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:31:10] "[35m[1mGET /who-we-serve HTTP/1.1[0m" 500 -
+2025-03-24 22:31:10,474 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:31:10] "[36mGET /who-we-serve?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:31:10,539 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:31:10] "[36mGET /who-we-serve?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:31:10,653 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:31:10] "[36mGET /who-we-serve?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:32:44,237 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:44] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2025-03-24 22:32:44,322 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:44] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:32:44,336 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:44] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:32:44,383 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:44] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:32:46,576 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:46] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:32:46,654 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:46] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:32:46,656 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:46] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:32:46,684 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:32:46] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:33:06,957 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:06] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:33:07,041 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:33:09,876 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:09] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:33:09,960 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:09] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:33:09,961 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:09] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:33:09,994 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:09] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:33:25,807 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:25] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:33:25,874 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:25] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:33:25,874 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:25] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:33:25,910 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:25] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:33:27,662 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:27] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:33:27,728 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:33:41,167 - __main__ - INFO - Calculating CDR for static/uploads\06.jpg
+2025-03-24 22:33:42,046 - __main__ - INFO - CDR calculation completed in 0.88 seconds. CDR: 0.266
+2025-03-24 22:33:42,046 - __main__ - INFO - Looking up AVR and FD for image: 06
+2025-03-24 22:33:42,059 - __main__ - INFO - Retrieved AVR: 0.7499507934755146, FD: 1.311
+2025-03-24 22:33:42,060 - __main__ - INFO - Looking for process images for: 06
+2025-03-24 22:33:42,061 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/06.jpg
+2025-03-24 22:33:42,063 - __main__ - INFO - Found av_class image: H/av_classification/06.png
+2025-03-24 22:33:42,064 - __main__ - INFO - Found fd image: H/fd/06.png
+2025-03-24 22:33:42,121 - __main__ - INFO - Applying CLAHE to static/uploads\06.jpg
+2025-03-24 22:33:42,167 - __main__ - INFO - CLAHE image saved to static/results\clahe_06.png
+2025-03-24 22:33:42,171 - __main__ - ERROR - Upload error: Could not build url for endpoint 'index'. Did you mean 'api_upload_file' instead?
+2025-03-24 22:33:42,212 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:42] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-03-24 22:33:42,293 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:42] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:33:42,295 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:42] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:33:42,356 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:33:42] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png&s=X6nhJFecv85YC9u60RxC HTTP/1.1[0m" 304 -
+2025-03-24 22:35:17,612 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:35:17] "GET / HTTP/1.1" 200 -
+2025-03-24 22:35:17,695 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:35:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:35:20,983 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:35:20] "GET /home HTTP/1.1" 200 -
+2025-03-24 22:35:21,048 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:35:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:35:55,315 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-24 22:35:56,668 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 22:36:06,793 - __main__ - INFO - Loading models...
+2025-03-24 22:36:07,017 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:36:07,033 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 22:36:07,060 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 22:39:17,912 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:17] "GET /home HTTP/1.1" 200 -
+2025-03-24 22:39:18,111 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:39:19,686 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:19] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:39:19,745 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:19] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:39:19,747 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:19] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:39:19,788 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:19] "GET /about?__debugger__=yes&cmd=resource&f=console.png&s=YdUFkMLlRnfVFXzpNqkP HTTP/1.1" 200 -
+2025-03-24 22:39:26,000 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:26] "[35m[1mGET /who-we-serve HTTP/1.1[0m" 500 -
+2025-03-24 22:39:26,064 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:26] "[36mGET /who-we-serve?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:39:26,083 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:26] "[36mGET /who-we-serve?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:39:26,123 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:26] "GET /who-we-serve?__debugger__=yes&cmd=resource&f=console.png&s=YdUFkMLlRnfVFXzpNqkP HTTP/1.1" 200 -
+2025-03-24 22:39:31,684 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:31] "GET /faq HTTP/1.1" 200 -
+2025-03-24 22:39:31,742 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:39:35,079 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:35] "[35m[1mGET /contact HTTP/1.1[0m" 500 -
+2025-03-24 22:39:35,153 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:35] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:39:35,154 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:35] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:39:35,190 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:35] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=YdUFkMLlRnfVFXzpNqkP HTTP/1.1" 200 -
+2025-03-24 22:39:42,798 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:42] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:39:42,867 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:39:49,384 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 22:39:52,483 - __main__ - INFO - CDR calculation completed in 3.10 seconds. CDR: 0.188
+2025-03-24 22:39:52,484 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 22:39:52,501 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 22:39:52,502 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 22:39:52,504 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 22:39:52,505 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 22:39:52,506 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 22:39:52,555 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 22:39:52,590 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 22:39:52,591 - __main__ - ERROR - Error processing upload: 'vessel_seg_image'
+2025-03-24 22:39:52,595 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:52] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-24 22:39:52,605 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:52] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:39:52,672 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:39:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:40:07,652 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 22:40:08,326 - __main__ - INFO - CDR calculation completed in 0.67 seconds. CDR: 0.188
+2025-03-24 22:40:08,327 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 22:40:08,338 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 22:40:08,344 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 22:40:08,346 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 22:40:08,348 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 22:40:08,349 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 22:40:08,407 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 22:40:08,458 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 22:40:08,459 - __main__ - ERROR - Error processing upload: 'vessel_seg_image'
+2025-03-24 22:40:08,461 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:08] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-24 22:40:08,471 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:08] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:40:08,548 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:40:35,877 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 22:40:36,610 - __main__ - INFO - CDR calculation completed in 0.73 seconds. CDR: 0.188
+2025-03-24 22:40:36,611 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 22:40:36,621 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 22:40:36,622 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 22:40:36,623 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 22:40:36,624 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 22:40:36,625 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 22:40:36,686 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 22:40:36,727 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 22:40:36,728 - __main__ - ERROR - Error processing upload: 'vessel_seg_image'
+2025-03-24 22:40:36,730 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:36] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-24 22:40:36,744 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:36] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:40:36,822 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:40:43,152 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:40:43] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:42:10,349 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:42:10] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:42:10,406 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:42:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:42:12,554 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:42:12] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:42:12,623 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:42:12] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:42:12,625 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:42:12] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:42:12,666 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:42:12] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=YdUFkMLlRnfVFXzpNqkP HTTP/1.1[0m" 304 -
+2025-03-24 22:45:13,016 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-24 22:45:13,873 - werkzeug - INFO -  * Restarting with stat
+2025-03-24 22:45:21,971 - __main__ - INFO - Loading models...
+2025-03-24 22:45:22,211 - __main__ - INFO - Models loaded successfully
+2025-03-24 22:45:22,226 - werkzeug - WARNING -  * Debugger is active!
+2025-03-24 22:45:22,250 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-24 22:52:14,016 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:14] "GET /home HTTP/1.1" 200 -
+2025-03-24 22:52:14,272 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:15,641 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:15] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:52:15,721 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:15] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:15,722 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:15] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:52:15,763 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:15] "GET /about?__debugger__=yes&cmd=resource&f=console.png&s=X0NjTlG07UOVqwpz6lxn HTTP/1.1" 200 -
+2025-03-24 22:52:20,785 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:20] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-24 22:52:20,841 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:35,320 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:35] "GET /faq HTTP/1.1" 200 -
+2025-03-24 22:52:35,401 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:37,795 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:37] "GET /contact HTTP/1.1" 200 -
+2025-03-24 22:52:37,848 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:43,255 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:43] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:52:43,326 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:43] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:43,329 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:43] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:52:43,364 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:43] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X0NjTlG07UOVqwpz6lxn HTTP/1.1[0m" 304 -
+2025-03-24 22:52:46,211 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:46] "GET /home HTTP/1.1" 200 -
+2025-03-24 22:52:46,286 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:47,412 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:47] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:52:47,464 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:47] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 22:52:47,465 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:52:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:52:59,724 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 22:52:59,761 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 22:52:59,762 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 22:53:02,778 - __main__ - INFO - CDR calculation completed in 3.02 seconds. CDR: 0.188
+2025-03-24 22:53:02,779 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 22:53:02,802 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 22:53:02,803 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 22:53:02,805 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 22:53:02,807 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 22:53:02,808 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 22:53:02,864 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "POST /upload HTTP/1.1" 200 -
+2025-03-24 22:53:02,941 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "[33mGET /static/results\\clahe_01.png HTTP/1.1[0m" 404 -
+2025-03-24 22:53:02,944 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "[33mGET /static/results\\overlay_01.jpg HTTP/1.1[0m" 404 -
+2025-03-24 22:53:02,944 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:53:02,948 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-24 22:53:02,961 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-24 22:53:02,971 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:02] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-24 22:53:03,028 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:03] "GET /static/H/fd/01.png HTTP/1.1" 200 -
+2025-03-24 22:53:25,147 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:25] "GET /home HTTP/1.1" 200 -
+2025-03-24 22:53:25,215 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:53:27,720 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:27] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 22:53:27,789 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:27] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 22:53:27,801 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:27] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 22:53:27,850 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 22:53:27] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X0NjTlG07UOVqwpz6lxn HTTP/1.1[0m" 304 -
+2025-03-24 23:11:33,072 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:33] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 23:11:33,205 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:33] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:11:33,230 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:33] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 23:11:33,327 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:33] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X0NjTlG07UOVqwpz6lxn HTTP/1.1[0m" 304 -
+2025-03-24 23:11:37,129 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:37] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2025-03-24 23:11:37,212 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:37] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:11:37,217 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:37] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-24 23:11:37,273 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:11:37] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png&s=X0NjTlG07UOVqwpz6lxn HTTP/1.1[0m" 304 -
+2025-03-24 23:24:49,413 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:24:49] "GET /home HTTP/1.1" 200 -
+2025-03-24 23:24:49,471 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:24:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:05,763 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:05] "GET /about HTTP/1.1" 200 -
+2025-03-24 23:25:05,823 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:17,369 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:17] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 23:25:17,435 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:17] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 23:25:17,435 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:19,364 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:19] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-24 23:25:19,431 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:20,666 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:20] "GET /faq HTTP/1.1" 200 -
+2025-03-24 23:25:20,727 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:21,746 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:21] "GET /contact HTTP/1.1" 200 -
+2025-03-24 23:25:21,810 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:24,311 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:24] "GET /about HTTP/1.1" 200 -
+2025-03-24 23:25:24,377 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:25:28,867 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:28] "GET /home HTTP/1.1" 200 -
+2025-03-24 23:25:28,942 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:25:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:26:06,845 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:26:06] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-24 23:26:06,904 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:26:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:26:18,735 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:26:18] "GET /faq HTTP/1.1" 200 -
+2025-03-24 23:26:18,808 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:26:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:26:24,010 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:26:24] "GET /contact HTTP/1.1" 200 -
+2025-03-24 23:26:24,081 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:26:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:10,226 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:10] "GET /home HTTP/1.1" 200 -
+2025-03-24 23:58:10,306 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:11,993 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:11] "GET /about HTTP/1.1" 200 -
+2025-03-24 23:58:12,066 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:14,499 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:14] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 23:58:14,572 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:14] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 23:58:14,572 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:16,490 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:16] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-24 23:58:16,561 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:17,592 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:17] "GET /faq HTTP/1.1" 200 -
+2025-03-24 23:58:17,660 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:18,611 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:18] "GET /contact HTTP/1.1" 200 -
+2025-03-24 23:58:18,685 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:21,250 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:21] "GET /about HTTP/1.1" 200 -
+2025-03-24 23:58:21,313 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:22,230 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:22] "GET /contact HTTP/1.1" 200 -
+2025-03-24 23:58:22,292 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:34,256 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:34] "GET /home HTTP/1.1" 200 -
+2025-03-24 23:58:34,318 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:45,469 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:45] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 23:58:45,535 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:45] "GET /assessment HTTP/1.1" 200 -
+2025-03-24 23:58:45,535 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:51,650 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-24 23:58:51,730 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-24 23:58:51,731 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-24 23:58:52,630 - __main__ - INFO - CDR calculation completed in 0.90 seconds. CDR: 0.188
+2025-03-24 23:58:52,631 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-24 23:58:52,676 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-24 23:58:52,678 - __main__ - INFO - Looking for process images for: 01
+2025-03-24 23:58:52,679 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-24 23:58:52,680 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-24 23:58:52,681 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-24 23:58:52,700 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "POST /upload HTTP/1.1" 200 -
+2025-03-24 23:58:52,799 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-24 23:58:52,800 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "[33mGET /static/results\\clahe_01.png HTTP/1.1[0m" 404 -
+2025-03-24 23:58:52,802 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-24 23:58:52,807 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "[33mGET /static/results\\overlay_01.jpg HTTP/1.1[0m" 404 -
+2025-03-24 23:58:52,833 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-24 23:58:52,834 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-24 23:58:52,838 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2025 23:58:52] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 09:55:47,828 - __main__ - INFO - Loading models...
+2025-03-25 09:55:48,469 - __main__ - INFO - Models loaded successfully
+2025-03-25 09:55:48,555 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 09:55:48,556 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 09:55:48,561 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 09:56:08,376 - __main__ - INFO - Loading models...
+2025-03-25 09:56:08,883 - __main__ - INFO - Models loaded successfully
+2025-03-25 09:56:09,080 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 09:56:09,346 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 09:56:10,558 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:10] "GET / HTTP/1.1" 200 -
+2025-03-25 09:56:11,321 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 09:56:12,118 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 09:56:27,735 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:27] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 09:56:27,819 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 09:56:27,921 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:27] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 09:56:38,274 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 09:56:38,927 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 09:56:38,929 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 09:56:47,094 - __main__ - INFO - CDR calculation completed in 8.16 seconds. CDR: 0.188
+2025-03-25 09:56:47,095 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 09:56:47,175 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 09:56:47,179 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 09:56:47,181 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 09:56:47,182 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 09:56:47,184 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 09:56:47,341 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "POST /upload HTTP/1.1" 200 -
+2025-03-25 09:56:47,433 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 09:56:47,454 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 09:56:47,499 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 09:56:47,510 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "[33mGET /static/results\\overlay_01.jpg HTTP/1.1[0m" 404 -
+2025-03-25 09:56:47,542 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "[33mGET /static/results\\clahe_01.png HTTP/1.1[0m" 404 -
+2025-03-25 09:56:47,544 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 09:56:47,548 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 09:56:47] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:08:37,937 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 10:08:39,199 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 10:08:47,949 - __main__ - INFO - Loading models...
+2025-03-25 10:08:48,174 - __main__ - INFO - Models loaded successfully
+2025-03-25 10:08:48,193 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 10:08:48,222 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 10:09:07,999 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:07] "GET /home HTTP/1.1" 200 -
+2025-03-25 10:09:08,313 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:09:09,364 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:09] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:09:09,429 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:09:09,442 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:09] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:09:18,263 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 10:09:18,347 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 10:09:18,348 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 10:09:23,146 - __main__ - INFO - CDR calculation completed in 4.80 seconds. CDR: 0.188
+2025-03-25 10:09:23,147 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 10:09:23,171 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 10:09:23,172 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 10:09:23,174 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 10:09:23,176 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 10:09:23,177 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 10:09:23,245 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "POST /upload HTTP/1.1" 200 -
+2025-03-25 10:09:23,347 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:09:23,349 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 10:09:23,361 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 10:09:23,407 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 10:09:23,409 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:09:23,416 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:09:23,442 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:09:23] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:21:25,049 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:25] "GET /home HTTP/1.1" 200 -
+2025-03-25 10:21:25,123 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:21:26,363 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:26] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:21:26,424 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:26] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:21:26,424 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:21:35,330 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 10:21:35,366 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 10:21:35,366 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 10:21:36,001 - __main__ - INFO - CDR calculation completed in 0.63 seconds. CDR: 0.188
+2025-03-25 10:21:36,002 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 10:21:36,015 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 10:21:36,015 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 10:21:36,016 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 10:21:36,017 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 10:21:36,018 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 10:21:36,065 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "POST /upload HTTP/1.1" 200 -
+2025-03-25 10:21:36,145 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:21:36,147 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 10:21:36,169 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 10:21:36,174 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 10:21:36,179 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:21:36,202 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:21:36,206 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:21:36] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:26:54,784 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:26:54] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:26:54,854 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:26:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:26:54,855 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:26:54] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:27:02,128 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 10:27:02,165 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 10:27:02,166 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 10:27:02,733 - __main__ - INFO - CDR calculation completed in 0.57 seconds. CDR: 0.188
+2025-03-25 10:27:02,733 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 10:27:02,747 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 10:27:02,747 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 10:27:02,748 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 10:27:02,749 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 10:27:02,750 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 10:27:02,810 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "POST /upload HTTP/1.1" 200 -
+2025-03-25 10:27:02,879 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:27:02,885 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 10:27:02,904 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:27:02,909 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:27:02,912 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 10:27:02,912 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 10:27:02,927 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:02] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:27:17,444 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:17] "GET /home HTTP/1.1" 200 -
+2025-03-25 10:27:17,510 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:27:27,831 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:27] "GET /about HTTP/1.1" 200 -
+2025-03-25 10:27:27,905 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:27:39,230 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:39] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:27:39,308 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:27:39,308 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:39] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:27:40,646 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:40] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 10:27:40,700 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:27:44,607 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:44] "GET /faq HTTP/1.1" 200 -
+2025-03-25 10:27:44,668 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:27:53,638 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:53] "GET /contact HTTP/1.1" 200 -
+2025-03-25 10:27:53,691 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:27:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:29:48,246 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:29:48] "GET /home HTTP/1.1" 200 -
+2025-03-25 10:29:48,317 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:29:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:29:58,940 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:29:58] "GET /about HTTP/1.1" 200 -
+2025-03-25 10:29:58,997 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:29:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:05,108 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:05] "GET /about HTTP/1.1" 200 -
+2025-03-25 10:30:05,166 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:09,827 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:09] "GET /about HTTP/1.1" 200 -
+2025-03-25 10:30:09,885 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:13,215 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:13] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:30:13,285 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:13] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:30:13,285 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:21,841 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 10:30:21,881 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 10:30:21,883 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 10:30:22,566 - __main__ - INFO - CDR calculation completed in 0.68 seconds. CDR: 0.188
+2025-03-25 10:30:22,567 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 10:30:22,573 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 10:30:22,573 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 10:30:22,574 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 10:30:22,575 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 10:30:22,576 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 10:30:22,589 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "POST /upload HTTP/1.1" 200 -
+2025-03-25 10:30:22,673 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:22,674 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 10:30:22,696 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 10:30:22,702 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 10:30:22,706 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:30:22,712 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:30:22,716 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:22] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 10:30:49,991 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:49] "GET /home HTTP/1.1" 200 -
+2025-03-25 10:30:50,068 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:51,772 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:51] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 10:30:51,829 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:54,272 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:54] "GET /faq HTTP/1.1" 200 -
+2025-03-25 10:30:54,334 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:59,797 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:59] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:30:59,872 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:30:59,876 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:30:59] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 10:31:00,919 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:31:00] "GET /about HTTP/1.1" 200 -
+2025-03-25 10:31:00,983 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:31:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:31:05,295 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:31:05] "GET /contact HTTP/1.1" 200 -
+2025-03-25 10:31:05,353 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:31:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:42:40,896 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:42:40] "GET /about HTTP/1.1" 200 -
+2025-03-25 10:42:40,973 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 10:42:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 10:45:17,245 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 10:45:18,151 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 10:45:26,361 - __main__ - INFO - Loading models...
+2025-03-25 10:45:26,617 - __main__ - INFO - Models loaded successfully
+2025-03-25 10:45:26,631 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 10:45:26,657 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 11:00:06,522 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:00:06] "GET /home HTTP/1.1" 200 -
+2025-03-25 11:00:06,852 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:00:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:03:01,949 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:01] "GET /about HTTP/1.1" 200 -
+2025-03-25 11:03:02,012 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:03:26,678 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:26] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 11:03:26,750 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:03:26,752 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:26] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 11:03:30,400 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:30] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 11:03:30,453 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:03:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:05:50,569 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:05:50] "GET /faq HTTP/1.1" 200 -
+2025-03-25 11:05:50,627 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:05:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:05:59,134 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:05:59] "GET /home HTTP/1.1" 200 -
+2025-03-25 11:05:59,187 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:05:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:06:02,427 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:02] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 11:06:02,476 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:06:02,478 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:02] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 11:06:24,975 - __main__ - INFO - Applying CLAHE to static/uploads\08.jpg
+2025-03-25 11:06:25,020 - __main__ - INFO - CLAHE image saved to static/results\clahe_08.png
+2025-03-25 11:06:25,021 - __main__ - INFO - Calculating CDR for static/uploads\08.jpg
+2025-03-25 11:06:28,068 - __main__ - INFO - CDR calculation completed in 3.05 seconds. CDR: 0.273
+2025-03-25 11:06:28,068 - __main__ - INFO - Looking up AVR and FD for image: 08
+2025-03-25 11:06:28,084 - __main__ - INFO - Retrieved AVR: 0.6899306125645509, FD: 1.4
+2025-03-25 11:06:28,084 - __main__ - INFO - Looking for process images for: 08
+2025-03-25 11:06:28,086 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/08.jpg
+2025-03-25 11:06:28,087 - __main__ - INFO - Found av_class image: H/av_classification/08.png
+2025-03-25 11:06:28,088 - __main__ - INFO - Found fd image: H/fd/08.png
+2025-03-25 11:06:28,134 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "POST /upload HTTP/1.1" 200 -
+2025-03-25 11:06:28,214 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:06:28,227 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "GET /static/uploads/08.jpg HTTP/1.1" 200 -
+2025-03-25 11:06:28,234 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "GET /static/results/overlay_08.jpg HTTP/1.1" 200 -
+2025-03-25 11:06:28,255 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "GET /static/results/clahe_08.png HTTP/1.1" 200 -
+2025-03-25 11:06:28,256 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "GET /static/H/vessel_segmentation/08.jpg HTTP/1.1" 200 -
+2025-03-25 11:06:28,273 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "GET /static/H/av_classification/08.png HTTP/1.1" 200 -
+2025-03-25 11:06:28,273 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:06:28] "GET /static/H/fd/08.png HTTP/1.1" 200 -
+2025-03-25 11:56:14,316 - __main__ - INFO - Loading models...
+2025-03-25 11:56:14,626 - __main__ - INFO - Models loaded successfully
+2025-03-25 11:56:14,702 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 11:56:14,704 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 11:56:14,709 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 11:56:25,666 - __main__ - INFO - Loading models...
+2025-03-25 11:56:26,048 - __main__ - INFO - Models loaded successfully
+2025-03-25 11:56:26,077 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 11:56:26,125 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 11:57:23,331 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 11:57:24,399 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 11:57:38,012 - __main__ - INFO - Loading models...
+2025-03-25 11:57:38,631 - __main__ - INFO - Models loaded successfully
+2025-03-25 11:57:38,783 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 11:57:38,866 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 11:59:17,409 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:17] "GET / HTTP/1.1" 200 -
+2025-03-25 11:59:17,841 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:59:18,327 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 11:59:19,437 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:19] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 11:59:19,506 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:59:19,513 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:19] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 11:59:29,017 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 11:59:29,372 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 11:59:29,373 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 11:59:36,232 - __main__ - INFO - CDR calculation completed in 6.86 seconds. CDR: 0.183
+2025-03-25 11:59:36,233 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 11:59:36,308 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 11:59:36,309 - __main__ - INFO - Looking for process images for: 01.jpg
+2025-03-25 11:59:36,327 - __main__ - INFO - Found vessel_seg image: results/vessel_seg_01.png
+2025-03-25 11:59:36,363 - __main__ - INFO - Found av_class image: results/av_class_01.png
+2025-03-25 11:59:36,375 - __main__ - INFO - Found fd image: results/fd_01.png
+2025-03-25 11:59:36,636 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:36] "POST /upload HTTP/1.1" 200 -
+2025-03-25 11:59:36,824 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 11:59:36,842 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:36] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 11:59:36,893 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:36] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 11:59:37,922 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:37] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 11:59:37,927 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:37] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 11:59:38,007 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:38] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 11:59:38,318 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 11:59:38] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 12:03:38,227 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:03:39,022 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:03:50,229 - __main__ - INFO - Loading models...
+2025-03-25 12:03:50,540 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:03:50,565 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:03:50,597 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:04:42,814 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:04:43,793 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:04:55,294 - __main__ - INFO - Loading models...
+2025-03-25 12:04:55,643 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:04:55,673 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:04:55,722 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:05:00,424 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:05:00] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:05:00,519 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:05:00] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:05:00,765 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:05:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:06:07,396 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:06:07] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:06:07,490 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:06:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:06:08,534 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:06:08] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:06:08,637 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:06:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:06:08,680 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:06:08] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:08:05,783 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:08:06,980 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:08:27,628 - __main__ - INFO - Loading models...
+2025-03-25 12:08:28,143 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:08:28,184 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:08:28,244 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:08:52,077 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:08:52] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:08:52,152 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:08:52] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:08:52,390 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:08:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:09:05,346 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:05] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:09:05,424 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:09:06,376 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:06] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:09:06,451 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:09:06,456 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:06] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:09:12,889 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:09:13,915 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:09:27,154 - __main__ - INFO - Loading models...
+2025-03-25 12:09:27,588 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:09:27,614 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:09:27,657 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:09:35,585 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:35] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:09:35,666 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:35] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:09:35,903 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:09:46,562 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:09:46,626 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:09:46,627 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:09:51,181 - __main__ - INFO - CDR calculation completed in 4.55 seconds. CDR: 0.188
+2025-03-25 12:09:51,182 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:09:51,201 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:09:51,202 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:09:51,203 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 12:09:51,210 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 12:09:51,211 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 12:09:51,283 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:09:51,368 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:09:51,375 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:09:51,399 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 12:09:51,403 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 12:09:51,411 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 12:09:51,414 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:09:51,415 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:09:51] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:11:07,235 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:11:08,148 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:11:16,858 - __main__ - INFO - Loading models...
+2025-03-25 12:11:17,058 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:11:17,076 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:11:17,117 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:11:25,981 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:11:25] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:11:26,048 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:11:26] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:11:26,205 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:11:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:15:21,199 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:21] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:15:21,254 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:15:21,268 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:21] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:15:37,645 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:15:37,663 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:15:37,664 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:15:40,703 - __main__ - INFO - CDR calculation completed in 3.04 seconds. CDR: 0.188
+2025-03-25 12:15:40,704 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:15:40,724 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:15:40,724 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:15:40,736 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 12:15:40,758 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 12:15:40,766 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 12:15:40,809 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:15:40,885 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:15:40,887 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "GET /static/uploads/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:15:40,907 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:15:40,919 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:15:40,921 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 12:15:40,944 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 12:15:40,949 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:15:40] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 12:17:01,861 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:17:02,596 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:17:11,324 - __main__ - INFO - Loading models...
+2025-03-25 12:17:11,586 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:17:11,600 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:17:11,628 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:17:32,322 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:17:33,002 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:17:40,665 - __main__ - INFO - Loading models...
+2025-03-25 12:17:40,870 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:17:40,887 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:17:40,952 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:18:21,857 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:18:22,503 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:18:30,058 - __main__ - INFO - Loading models...
+2025-03-25 12:18:30,273 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:18:30,293 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:18:30,320 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:18:58,987 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:18:58] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:18:59,053 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:18:59] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:18:59,208 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:18:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:19:06,358 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:19:06,397 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:19:06,398 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:19:09,325 - __main__ - INFO - CDR calculation completed in 2.93 seconds. CDR: 0.188
+2025-03-25 12:19:09,326 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:19:09,341 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:19:09,346 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:19:09,346 - __main__ - INFO - Found vessel_seg image: H/vessel_segmentation/01.png
+2025-03-25 12:19:09,348 - __main__ - INFO - Found av_class image: H/av_classification/01.png
+2025-03-25 12:19:09,349 - __main__ - INFO - Found fd image: H/fd/01.png
+2025-03-25 12:19:09,406 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:19:09,485 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:19:09,493 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:19:09,505 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:19:09,507 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:19:09,515 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "[36mGET /static/H/vessel_segmentation/01.png HTTP/1.1[0m" 304 -
+2025-03-25 12:19:09,522 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "[36mGET /static/H/av_classification/01.png HTTP/1.1[0m" 304 -
+2025-03-25 12:19:09,527 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:19:09] "[36mGET /static/H/fd/01.png HTTP/1.1[0m" 304 -
+2025-03-25 12:21:12,240 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-25 12:21:12,947 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 12:21:21,987 - __main__ - INFO - Loading models...
+2025-03-25 12:21:22,186 - __main__ - INFO - Models loaded successfully
+2025-03-25 12:21:22,202 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 12:21:22,231 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 12:21:50,638 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:50] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:21:50,709 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:50] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:21:50,883 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:21:56,651 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:21:56,663 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:21:56,664 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:21:59,640 - __main__ - INFO - CDR calculation completed in 2.97 seconds. CDR: 0.188
+2025-03-25 12:21:59,640 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:21:59,654 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:21:59,654 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:21:59,664 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 12:21:59,685 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 12:21:59,693 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 12:21:59,750 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:21:59,822 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:21:59,846 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:21:59,849 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:21:59,853 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:21:59,876 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 12:21:59,882 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 12:21:59,892 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:21:59] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 12:22:11,167 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:22:11] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:22:11,239 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:22:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:34:35,887 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:35] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:34:35,943 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:35] "GET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1" 200 -
+2025-03-25 12:34:35,944 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 12:34:44,762 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:44] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:34:44,824 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:34:44,826 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:44] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:34:44,828 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:44] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:34:54,943 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:34:54,955 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:34:54,956 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:34:55,711 - __main__ - INFO - CDR calculation completed in 0.75 seconds. CDR: 0.188
+2025-03-25 12:34:55,712 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:34:55,725 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:34:55,726 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:34:55,737 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 12:34:55,760 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 12:34:55,765 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 12:34:55,815 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:34:55,891 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:34:55,901 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:34:55,912 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:34:55,917 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:34:55,921 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:34:55,951 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 12:34:55,968 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 12:34:55,977 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:34:55] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 12:40:53,824 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:40:53] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:40:53,892 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:40:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 12:40:53,893 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:40:53] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:40:53,894 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:40:53] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:41:07,610 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:07] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:41:07,683 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:41:07,684 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:07] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:41:20,189 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:20] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:41:20,267 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:41:20,269 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:20] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:41:20,270 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:20] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:41:30,041 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:41:30,058 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:41:30,067 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:41:30,682 - __main__ - INFO - CDR calculation completed in 0.61 seconds. CDR: 0.188
+2025-03-25 12:41:30,683 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:41:30,728 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:41:30,729 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:41:30,744 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 12:41:30,763 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 12:41:30,771 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 12:41:30,782 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:41:30,842 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:41:30,866 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:41:30,885 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:41:30,888 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:41:30,892 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:41:30,895 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 12:41:30,922 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 12:41:30,945 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:30] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 12:41:47,363 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:47] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:41:47,437 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:41:47,445 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:41:47] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:42:38,166 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:42:38] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:42:38,241 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:42:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:42:38,242 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:42:38] "GET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1" 200 -
+2025-03-25 12:43:00,615 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:00] "GET /about HTTP/1.1" 200 -
+2025-03-25 12:43:00,684 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:00,685 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:00] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:43:01,530 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:01] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:43:01,583 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:01,595 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:01] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:43:01,595 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:01] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:43:02,639 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:02] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 12:43:02,710 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:02,711 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:02] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:43:04,636 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:04] "GET /faq HTTP/1.1" 200 -
+2025-03-25 12:43:04,693 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:04,694 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:04] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:43:05,339 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:05] "GET /contact HTTP/1.1" 200 -
+2025-03-25 12:43:05,388 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:05,391 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:05] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:43:06,627 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:06] "GET /about HTTP/1.1" 200 -
+2025-03-25 12:43:06,690 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:06,699 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:06] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:43:20,285 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:20] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:43:20,346 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:43:20,346 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:43:20] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:05,586 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:05] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:49:05,662 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 12:49:05,663 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:05] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:11,470 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:11] "GET /about HTTP/1.1" 200 -
+2025-03-25 12:49:11,528 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:49:11,530 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:11] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:12,292 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:12] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:49:12,352 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:49:12,359 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:12] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:12,361 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:12] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:49:13,420 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:13] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 12:49:13,478 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:49:13,486 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:13] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:14,933 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:14] "GET /faq HTTP/1.1" 200 -
+2025-03-25 12:49:14,988 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:49:14,992 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:14] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:16,123 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:16] "GET /contact HTTP/1.1" 200 -
+2025-03-25 12:49:16,177 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:49:16,181 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:16] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:49:18,485 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:18] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:49:18,546 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:49:18,547 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:49:18] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:52:12,975 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:12] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:52:13,035 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 12:52:13,036 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:13] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:52:15,797 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:15] "GET /about HTTP/1.1" 200 -
+2025-03-25 12:52:15,850 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:52:15,851 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:15] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:52:18,249 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:18] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:52:18,321 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:52:18,326 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:18] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:52:18,327 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:18] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:52:26,098 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:52:26,110 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:52:26,111 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:52:26,723 - __main__ - INFO - CDR calculation completed in 0.61 seconds. CDR: 0.188
+2025-03-25 12:52:26,724 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:52:26,735 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:52:26,736 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:52:26,748 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 12:52:26,769 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 12:52:26,776 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 12:52:26,785 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:52:26,857 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:52:26,863 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:52:26,886 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:52:26,903 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 12:52:26,903 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:52:26,934 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:52:26,937 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 12:52:26,948 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:26] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 12:52:43,016 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:43] "GET /home HTTP/1.1" 200 -
+2025-03-25 12:52:43,090 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:52:43,091 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:52:43] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:54:09,073 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:09] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:54:09,135 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:54:09,136 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:09] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 12:54:09,138 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:09] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:54:30,848 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 12:54:30,862 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 12:54:30,862 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 12:54:31,559 - __main__ - INFO - CDR calculation completed in 0.70 seconds. CDR: 0.188
+2025-03-25 12:54:31,560 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 12:54:31,569 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 12:54:31,570 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 12:54:31,582 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 12:54:31,601 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 12:54:31,609 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 12:54:31,620 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "POST /upload HTTP/1.1" 200 -
+2025-03-25 12:54:31,695 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 12:54:31,701 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 12:54:31,718 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 12:54:31,731 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 12:54:31,738 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 12:54:31,740 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 12:54:31,746 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 12:54:31,765 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 12:54:31] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 20:05:48,614 - __main__ - INFO - Loading models...
+2025-03-25 20:05:49,107 - __main__ - INFO - Models loaded successfully
+2025-03-25 20:05:49,181 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 20:05:49,183 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 20:05:49,189 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 20:06:01,559 - __main__ - INFO - Loading models...
+2025-03-25 20:06:01,859 - __main__ - INFO - Models loaded successfully
+2025-03-25 20:06:01,879 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 20:06:01,947 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-25 20:06:02,642 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:02] "GET / HTTP/1.1" 200 -
+2025-03-25 20:06:03,233 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:03] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:06:03,241 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:06:04,010 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 20:06:58,059 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:58] "GET /about HTTP/1.1" 200 -
+2025-03-25 20:06:58,160 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:06:58,180 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:06:58] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:07:11,958 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:11] "GET /about HTTP/1.1" 200 -
+2025-03-25 20:07:12,061 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:07:12,062 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:12] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:07:13,243 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:13] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:07:13,361 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:07:13,363 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:13] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:07:13,371 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:13] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:07:21,866 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:21] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 20:07:21,950 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:07:21,959 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:21] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:07:24,110 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:24] "GET /faq HTTP/1.1" 200 -
+2025-03-25 20:07:24,208 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:07:24,209 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:24] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:07:25,308 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:25] "GET /contact HTTP/1.1" 200 -
+2025-03-25 20:07:25,408 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:07:25,427 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:25] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:07:37,504 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:37] "GET /home HTTP/1.1" 200 -
+2025-03-25 20:07:37,606 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:07:37,608 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:07:37] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:09:42,344 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:42] "GET /about HTTP/1.1" 200 -
+2025-03-25 20:09:42,445 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:09:42,445 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:42] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:09:47,079 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:47] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:09:47,178 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:09:47,179 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:47] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:09:47,180 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:09:47] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:10:14,239 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:14] "GET /who-we-serve HTTP/1.1" 200 -
+2025-03-25 20:10:14,328 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:10:14,357 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:14] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:10:27,731 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:27] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:10:27,822 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:10:27,824 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:27] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:10:27,837 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:27] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:10:29,139 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:29] "GET /home HTTP/1.1" 200 -
+2025-03-25 20:10:29,216 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:10:29,238 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:29] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:10:30,050 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:30] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:10:30,151 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:10:30,156 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:30] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:10:30,158 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:30] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:10:43,132 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-25 20:10:43,183 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-25 20:10:43,185 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-25 20:10:48,259 - __main__ - INFO - CDR calculation completed in 5.07 seconds. CDR: 0.188
+2025-03-25 20:10:48,260 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-25 20:10:48,377 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-25 20:10:48,387 - __main__ - INFO - Looking for process images for: 01
+2025-03-25 20:10:48,411 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-25 20:10:48,437 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-25 20:10:48,453 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-25 20:10:48,503 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "POST /upload HTTP/1.1" 200 -
+2025-03-25 20:10:48,607 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:10:48,621 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:10:48,671 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-25 20:10:48,677 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-25 20:10:48,721 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-25 20:10:48,721 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-25 20:10:48,796 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-25 20:10:48,831 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:10:48] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-25 20:12:30,965 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:30] "GET /faq HTTP/1.1" 200 -
+2025-03-25 20:12:31,051 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:12:31,055 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:31] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:12:39,526 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:39] "GET /contact HTTP/1.1" 200 -
+2025-03-25 20:12:39,628 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:12:39,629 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:39] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:12:40,893 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:40] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:12:40,985 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:12:40,987 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:40] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-25 20:12:40,994 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:40] "GET /assessment HTTP/1.1" 200 -
+2025-03-25 20:12:45,220 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:45] "GET /about HTTP/1.1" 200 -
+2025-03-25 20:12:45,294 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 20:12:45,314 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 20:12:45] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:03:40,525 - __main__ - INFO - Loading models...
+2025-03-26 00:03:40,871 - __main__ - INFO - Models loaded successfully
+2025-03-26 00:03:40,927 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-26 00:03:40,929 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-26 00:03:40,935 - werkzeug - INFO -  * Restarting with stat
+2025-03-26 00:03:56,462 - __main__ - INFO - Loading models...
+2025-03-26 00:03:57,026 - __main__ - INFO - Models loaded successfully
+2025-03-26 00:03:57,076 - werkzeug - WARNING -  * Debugger is active!
+2025-03-26 00:03:57,162 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-26 00:03:58,221 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:03:58] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:03:58,239 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:03:58] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:03:59,041 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:03:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:03:59,125 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:03:59] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:04:06,081 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:06] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:04:06,188 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:04:06,208 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:06] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:04:06,954 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:06] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:04:07,066 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:04:07,083 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:07] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:04:57,066 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:57] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:04:57,177 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:04:57,182 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:04:57] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:05:00,042 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:00] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:05:00,128 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:05:00,129 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:00] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:05:04,332 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:04] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:05:04,416 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:05:04,418 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:04] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:05:46,381 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:46] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:05:46,530 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:05:46,532 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:05:46] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:09:22,989 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:09:22] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:09:23,063 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:09:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-26 00:09:23,074 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:09:23] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:09:28,855 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:09:28] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:09:28,926 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:09:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:09:28,952 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:09:28] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:10:40,939 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:40] "GET /about HTTP/1.1" 200 -
+2025-03-26 00:10:41,013 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:10:41,031 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:41] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:10:44,208 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:44] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:10:44,275 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:10:44,296 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:44] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:10:45,639 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:45] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:10:45,701 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:10:45,713 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:45] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:10:45,713 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:10:45] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:10:57,688 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-26 00:10:57,700 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-26 00:10:57,701 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-26 00:11:00,807 - __main__ - INFO - CDR calculation completed in 3.11 seconds. CDR: 0.188
+2025-03-26 00:11:00,808 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-26 00:11:00,830 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-26 00:11:00,833 - __main__ - INFO - Looking for process images for: 01
+2025-03-26 00:11:00,852 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-26 00:11:00,881 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-26 00:11:00,887 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-26 00:11:00,946 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:00] "POST /upload HTTP/1.1" 200 -
+2025-03-26 00:11:01,023 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:11:01,026 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:11:01,053 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-26 00:11:01,061 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-26 00:11:01,091 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-26 00:11:01,111 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-26 00:11:01,122 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-26 00:11:01,135 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:11:01] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-26 00:14:55,304 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-26 00:14:56,069 - werkzeug - INFO -  * Restarting with stat
+2025-03-26 00:15:03,445 - __main__ - INFO - Loading models...
+2025-03-26 00:15:03,739 - __main__ - INFO - Models loaded successfully
+2025-03-26 00:15:03,752 - werkzeug - WARNING -  * Debugger is active!
+2025-03-26 00:15:03,785 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-26 00:16:06,427 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:06] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:16:06,729 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:06] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:16:06,731 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-26 00:16:09,177 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:09] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:16:09,242 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:16:09,257 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:09] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:16:09,258 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:09] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:16:17,019 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-26 00:16:17,032 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-26 00:16:17,033 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-26 00:16:20,211 - __main__ - INFO - CDR calculation completed in 3.18 seconds. CDR: 0.188
+2025-03-26 00:16:20,212 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-26 00:16:20,226 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-26 00:16:20,227 - __main__ - INFO - Looking for process images for: 01
+2025-03-26 00:16:20,237 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-26 00:16:20,268 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-26 00:16:20,279 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-26 00:16:20,341 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "POST /upload HTTP/1.1" 200 -
+2025-03-26 00:16:20,419 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:16:20,420 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:16:20,440 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-26 00:16:20,443 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-26 00:16:20,464 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-26 00:16:20,490 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-26 00:16:20,491 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-26 00:16:20,508 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:20] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-26 00:16:49,074 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:49] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:16:49,153 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:16:49,153 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:49] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:16:51,807 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:51] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:16:51,870 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:16:51,872 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:51] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:16:51,873 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:16:51] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:16:59,244 - __main__ - INFO - Applying CLAHE to static/uploads\02.jpg
+2025-03-26 00:16:59,254 - __main__ - INFO - CLAHE image saved to static/results\clahe_02.png
+2025-03-26 00:16:59,255 - __main__ - INFO - Calculating CDR for static/uploads\02.jpg
+2025-03-26 00:16:59,946 - __main__ - INFO - CDR calculation completed in 0.69 seconds. CDR: 0.236
+2025-03-26 00:16:59,947 - __main__ - INFO - Looking up AVR and FD for image: 02
+2025-03-26 00:16:59,959 - __main__ - INFO - Retrieved AVR: 0.6758918872862321, FD: 1.416
+2025-03-26 00:16:59,961 - __main__ - INFO - Looking for process images for: 02
+2025-03-26 00:16:59,979 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_02.png
+2025-03-26 00:17:00,005 - __main__ - INFO - Found and resized av_class image: results/av_class_02.png
+2025-03-26 00:17:00,034 - __main__ - INFO - Found and resized fd image: results/fd_02.png
+2025-03-26 00:17:00,049 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "POST /upload HTTP/1.1" 200 -
+2025-03-26 00:17:00,151 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "GET /static/results/02.jpg HTTP/1.1" 200 -
+2025-03-26 00:17:00,154 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:17:00,158 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:17:00,169 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "GET /static/results/overlay_02.jpg HTTP/1.1" 200 -
+2025-03-26 00:17:00,187 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "GET /static/results/vessel_seg_02.png HTTP/1.1" 200 -
+2025-03-26 00:17:00,216 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "GET /static/results/clahe_02.png HTTP/1.1" 200 -
+2025-03-26 00:17:00,249 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "GET /static/results/av_class_02.png HTTP/1.1" 200 -
+2025-03-26 00:17:00,278 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:17:00] "GET /static/results/fd_02.png HTTP/1.1" 200 -
+2025-03-26 00:18:14,703 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:14] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:18:14,789 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:18:14,793 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:14] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:18:16,082 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:16] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:18:16,170 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:18:16,172 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:16] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:18:16,182 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:16] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:18:23,665 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-26 00:18:23,679 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-26 00:18:23,680 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-26 00:18:24,434 - __main__ - INFO - CDR calculation completed in 0.75 seconds. CDR: 0.188
+2025-03-26 00:18:24,434 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-26 00:18:24,460 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-26 00:18:24,462 - __main__ - INFO - Looking for process images for: 01
+2025-03-26 00:18:24,479 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-26 00:18:24,516 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-26 00:18:24,527 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-26 00:18:24,535 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "POST /upload HTTP/1.1" 200 -
+2025-03-26 00:18:24,628 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:18:24,632 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:18:24,665 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-26 00:18:24,667 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-26 00:18:24,679 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-26 00:18:24,712 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-26 00:18:24,747 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-26 00:18:24,748 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:18:24] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-26 00:20:12,736 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Murugan Thanganadar\\Desktop\\8th semester\\UI\\cvd2\\app.py', reloading
+2025-03-26 00:20:13,507 - werkzeug - INFO -  * Restarting with stat
+2025-03-26 00:20:20,785 - __main__ - INFO - Loading models...
+2025-03-26 00:20:21,013 - __main__ - INFO - Models loaded successfully
+2025-03-26 00:20:21,027 - werkzeug - WARNING -  * Debugger is active!
+2025-03-26 00:20:21,060 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-26 00:20:56,483 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:56] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:20:56,862 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:56] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:20:56,864 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:20:57,656 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:57] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:20:57,727 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:20:57,738 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:57] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:20:57,739 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:20:57] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:21:04,162 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-26 00:21:04,175 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-26 00:21:04,176 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-26 00:21:07,183 - __main__ - INFO - CDR calculation completed in 3.01 seconds. CDR: 0.188
+2025-03-26 00:21:07,183 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-26 00:21:07,202 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-26 00:21:07,203 - __main__ - INFO - Looking for process images for: 01
+2025-03-26 00:21:07,276 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-26 00:21:07,333 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-26 00:21:07,341 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-26 00:21:07,384 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "POST /upload HTTP/1.1" 200 -
+2025-03-26 00:21:07,452 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:21:07,457 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:21:07,477 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-26 00:21:07,481 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-26 00:21:07,505 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-26 00:21:07,517 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-26 00:21:07,548 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-26 00:21:07,555 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:07] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-26 00:21:17,659 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:17] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:21:17,731 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:21:17,732 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:17] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 00:21:17,733 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:17] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:21:25,953 - __main__ - INFO - Applying CLAHE to static/uploads\08.jpg
+2025-03-26 00:21:25,966 - __main__ - INFO - CLAHE image saved to static/results\clahe_08.png
+2025-03-26 00:21:25,966 - __main__ - INFO - Calculating CDR for static/uploads\08.jpg
+2025-03-26 00:21:26,567 - __main__ - INFO - CDR calculation completed in 0.60 seconds. CDR: 0.243
+2025-03-26 00:21:26,568 - __main__ - INFO - Looking up AVR and FD for image: 08
+2025-03-26 00:21:26,580 - __main__ - INFO - Retrieved AVR: 0.6899306125645509, FD: 1.4
+2025-03-26 00:21:26,580 - __main__ - INFO - Looking for process images for: 08
+2025-03-26 00:21:26,596 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_08.png
+2025-03-26 00:21:26,618 - __main__ - INFO - Found and resized av_class image: results/av_class_08.png
+2025-03-26 00:21:26,630 - __main__ - INFO - Found and resized fd image: results/fd_08.png
+2025-03-26 00:21:26,642 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "POST /upload HTTP/1.1" 200 -
+2025-03-26 00:21:26,732 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:21:26,741 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "GET /static/results/08.jpg HTTP/1.1" 200 -
+2025-03-26 00:21:26,743 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 00:21:26,749 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "GET /static/results/vessel_seg_08.png HTTP/1.1" 200 -
+2025-03-26 00:21:26,785 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "GET /static/results/clahe_08.png HTTP/1.1" 200 -
+2025-03-26 00:21:26,792 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "GET /static/results/overlay_08.jpg HTTP/1.1" 200 -
+2025-03-26 00:21:26,795 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "GET /static/results/av_class_08.png HTTP/1.1" 200 -
+2025-03-26 00:21:26,797 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:26] "GET /static/results/fd_08.png HTTP/1.1" 200 -
+2025-03-26 00:21:42,163 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:42] "GET /home HTTP/1.1" 200 -
+2025-03-26 00:21:42,235 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 00:21:42,239 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 00:21:42] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 09:53:26,990 - __main__ - INFO - Loading models...
+2025-03-26 09:53:27,319 - __main__ - INFO - Models loaded successfully
+2025-03-26 09:53:27,372 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-26 09:53:27,372 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-26 09:53:27,388 - werkzeug - INFO -  * Restarting with stat
+2025-03-26 09:53:35,204 - __main__ - INFO - Loading models...
+2025-03-26 09:53:35,403 - __main__ - INFO - Models loaded successfully
+2025-03-26 09:53:35,418 - werkzeug - WARNING -  * Debugger is active!
+2025-03-26 09:53:35,668 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-26 09:53:37,784 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 09:53:37] "GET / HTTP/1.1" 200 -
+2025-03-26 09:53:38,902 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 09:53:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 09:53:39,019 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 09:53:39] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 09:53:39,377 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 09:53:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-26 10:46:54,962 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:46:54] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 10:46:55,029 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:46:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 10:46:55,047 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:46:55] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 10:46:55,047 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:46:55] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 10:47:09,609 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-26 10:47:09,649 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-26 10:47:09,649 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-26 10:47:13,455 - __main__ - INFO - CDR calculation completed in 3.81 seconds. CDR: 0.188
+2025-03-26 10:47:13,455 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-26 10:47:13,514 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-26 10:47:13,514 - __main__ - INFO - Looking for process images for: 01
+2025-03-26 10:47:13,530 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-26 10:47:13,556 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-26 10:47:13,570 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-26 10:47:13,640 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "POST /upload HTTP/1.1" 200 -
+2025-03-26 10:47:13,706 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 10:47:13,714 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 10:47:13,733 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-26 10:47:13,741 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-26 10:47:13,765 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-26 10:47:13,781 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-26 10:47:13,789 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-26 10:47:13,829 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:13] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-26 10:47:28,422 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:28] "GET /about HTTP/1.1" 200 -
+2025-03-26 10:47:28,504 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 10:47:28,504 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 10:47:28] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 11:37:13,735 - __main__ - INFO - Loading models...
+2025-03-26 11:37:14,387 - __main__ - INFO - Models loaded successfully
+2025-03-26 11:37:14,443 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-26 11:37:14,443 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-26 11:37:14,450 - werkzeug - INFO -  * Restarting with stat
+2025-03-26 11:37:29,951 - __main__ - INFO - Loading models...
+2025-03-26 11:37:30,481 - __main__ - INFO - Models loaded successfully
+2025-03-26 11:37:30,512 - werkzeug - WARNING -  * Debugger is active!
+2025-03-26 11:37:30,607 - werkzeug - INFO -  * Debugger PIN: 240-821-253
+2025-03-26 11:37:31,201 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:31] "GET / HTTP/1.1" 200 -
+2025-03-26 11:37:31,766 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:31] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 11:37:31,770 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 11:37:32,601 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-26 11:37:38,297 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:38] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 11:37:38,379 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 11:37:38,386 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:38] "GET /assessment HTTP/1.1" 200 -
+2025-03-26 11:37:38,389 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:38] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 11:37:49,345 - __main__ - INFO - Applying CLAHE to static/uploads\01.jpg
+2025-03-26 11:37:49,394 - __main__ - INFO - CLAHE image saved to static/results\clahe_01.png
+2025-03-26 11:37:49,394 - __main__ - INFO - Calculating CDR for static/uploads\01.jpg
+2025-03-26 11:37:54,019 - __main__ - INFO - CDR calculation completed in 4.62 seconds. CDR: 0.188
+2025-03-26 11:37:54,020 - __main__ - INFO - Looking up AVR and FD for image: 01
+2025-03-26 11:37:54,082 - __main__ - INFO - Retrieved AVR: 0.6701742054455251, FD: 1.345
+2025-03-26 11:37:54,083 - __main__ - INFO - Looking for process images for: 01
+2025-03-26 11:37:54,110 - __main__ - INFO - Found and resized vessel_seg image: results/vessel_seg_01.png
+2025-03-26 11:37:54,145 - __main__ - INFO - Found and resized av_class image: results/av_class_01.png
+2025-03-26 11:37:54,155 - __main__ - INFO - Found and resized fd image: results/fd_01.png
+2025-03-26 11:37:54,202 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "POST /upload HTTP/1.1" 200 -
+2025-03-26 11:37:54,301 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 11:37:54,312 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -
+2025-03-26 11:37:54,355 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "GET /static/results/01.jpg HTTP/1.1" 200 -
+2025-03-26 11:37:54,361 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "GET /static/results/overlay_01.jpg HTTP/1.1" 200 -
+2025-03-26 11:37:54,408 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "GET /static/results/clahe_01.png HTTP/1.1" 200 -
+2025-03-26 11:37:54,447 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "GET /static/results/vessel_seg_01.png HTTP/1.1" 200 -
+2025-03-26 11:37:54,456 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "GET /static/results/av_class_01.png HTTP/1.1" 200 -
+2025-03-26 11:37:54,530 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:37:54] "GET /static/results/fd_01.png HTTP/1.1" 200 -
+2025-03-26 11:38:14,473 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:38:14] "GET /home HTTP/1.1" 200 -
+2025-03-26 11:38:14,558 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:38:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-26 11:38:14,562 - werkzeug - INFO - 127.0.0.1 - - [26/Mar/2025 11:38:14] "[36mGET /static/images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png HTTP/1.1[0m" 304 -

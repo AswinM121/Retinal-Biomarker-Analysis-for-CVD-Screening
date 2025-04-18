@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="active">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1>Advanced Approach to CVD Detection</h1>
+                <p>Leveraging advanced AI and retinal imaging for early cardiovascular risk assessment</p>
+            </div>
+        </section>
+
+        <section class="about-overview">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>At CVD Risk Assessment, we're advancing cardiovascular disease detection through non-invasive retinal imaging and artificial intelligence. Our mission is to make early CVD detection accessible, accurate, and affordable for everyone.</p>
+                    <div class="mission-points">
+                        <div class="mission-point">
+                            <i class="fas fa-eye"></i>
+                            <h3>Early Detection</h3>
+                            <p>Identify cardiovascular risks before traditional symptoms appear</p>
+                        </div>
+                        <div class="mission-point">
+                            <i class="fas fa-heart"></i>
+                            <h3>Prevention First</h3>
+                            <p>Enable proactive health management through timely risk assessment</p>
+                        </div>
+                        <div class="mission-point">
+                            <i class="fas fa-users"></i>
+                            <h3>Accessibility</h3>
+                            <p>Make advanced CVD screening available to healthcare providers worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-section">
+            <h2>Our Technology</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Retinal Analysis</h3>
+                    <p>Advanced image processing techniques to analyze retinal vessel patterns, providing insights into cardiovascular health.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Detection</h3>
+                    <p>State-of-the-art deep learning models trained on extensive datasets for accurate risk assessment.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Biomarker Analysis</h3>
+                    <p>Comprehensive analysis of multiple retinal biomarkers for thorough risk evaluation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Rapid Assessment</h3>
+                    <p>Get results within minutes of image upload</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>High Accuracy</h3>
+                    <p>Validated against clinical standards</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-medical-alt"></i>
+                    <h3>Detailed Reports</h3>
+                    <p>Comprehensive analysis with visual explanations</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Clinical Support</h3>
+                    <p>Assists healthcare providers in decision-making</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <div class="research-content">
+                <h2>Research Background</h2>
+                <p>Our technology is based on extensive research in retinal imaging and cardiovascular health. Key findings show that retinal vessel analysis can provide early indicators of cardiovascular disease risk.</p>
+
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Experience the future of cardiovascular risk assessment</p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('assessment') }}" class="btn btn-primary">
+                        <i class="fas fa-microscope"></i> Try Assessment
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                    <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@cvdassessment.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CVD Risk Assessment. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVD Risk Assessment Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="results-grid">
+            <div class="results-sidebar">
+                <div class="risk-summary">
+                    <div class="risk-result {{ 'high-risk' if risk_level == 'High Risk' else 'low-risk' }}">
+                        <div class="risk-icon">
+                            {% if risk_level == 'High Risk' %}
+                                <i class="fas fa-exclamation-triangle"></i>
+                            {% else %}
+                                <i class="fas fa-check-circle"></i>
+                            {% endif %}
+                        </div>
+                        <div class="risk-details">
+                            <h2 class="risk-value">{{ risk_level }}</h2>
+                            <p class="risk-reason">{{ risk_reason }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="biomarker-status">
+                        <h3><i class="fas fa-file-medical-alt"></i> Detected Biomarkers</h3>
+                        <ul class="biomarker-list">
+                            {% for biomarker in detected_biomarkers %}
+                            <li>{{ biomarker }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-main">
+                <div class="results-tabs">
+                    <div class="tab-buttons">
+                        <button type="button" class="tab-button active" data-tab="overview-tab">
+                            <i class="fas fa-chart-line"></i> Overview
+                        </button>
+                        <button type="button" class="tab-button" data-tab="cdr-tab">
+                            <i class="fas fa-eye"></i> CDR Analysis
+                        </button>
+                        <button type="button" class="tab-button" data-tab="vessel-tab">
+                            <i class="fas fa-project-diagram"></i> Vessel Analysis
+                        </button>
+                        <button type="button" class="tab-button" data-tab="fd-tab">
+                            <i class="fas fa-shapes"></i> FD Analysis
+                        </button>
+                    </div>
+                    
+                    <div class="tab-content active" id="overview-tab">
+                        <h2><i class="fas fa-chart-line"></i> Key Measurements</h2>
+                        <div class="measurement-grid">
+                            <div class="measurement-item {{ 'abnormal' if cdr > 0.6 else '' }}">
+                                <h3><i class="fas fa-eye"></i> Cup-to-Disc Ratio (CDR)</h3>
+                                <div class="measurement-value">{{ "%.3f"|format(cdr) }}</div>
+                                <div class="measurement-status">
+                                    {% if cdr > 0.6 %}
+                                    <i class="fas fa-exclamation-circle"></i> Above Normal
+                                    {% else %}
+                                    <i class="fas fa-check-circle"></i> Normal
+                                    {% endif %}
+                                </div>
+                            </div>
+                            
+                            <div class="measurement-item {{ 'abnormal' if avr < 0.67 or avr > 0.75 else '' }}">
+                                <h3><i class="fas fa-heartbeat"></i> Arteriovenous Ratio (AVR)</h3>
+                                <div class="measurement-value">{{ "%.3f"|format(avr) if avr else 'N/A' }}</div>
+                                <div class="measurement-status">
+                                    {% if avr %}
+                                        {% if avr < 0.67 or avr > 0.75 %}
+                                        <i class="fas fa-exclamation-circle"></i> Outside Normal Range
+                                        {% else %}
+                                        <i class="fas fa-check-circle"></i> Normal
+                                        {% endif %}
+                                    {% else %}
+                                    <i class="fas fa-question-circle"></i> Not Available
+                                    {% endif %}
+                                </div>
+                            </div>
+                            
+                            <div class="measurement-item {{ 'abnormal' if fd < 1.3 else '' }}">
+                                <h3><i class="fas fa-shapes"></i> Fractal Dimension (FD)</h3>
+                                <div class="measurement-value">{{ "%.3f"|format(fd) }}</div>
+                                <div class="measurement-status">
+                                    {% if fd < 1.3 %}
+                                    <i class="fas fa-exclamation-triangle"></i> Critical - High CVD Risk
+                                    {% else %}
+                                    <i class="fas fa-check-circle"></i> Normal
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="image-grid">
+                            <div class="image-item">
+                                <h3>Original Image</h3>
+                                <img src="{{ url_for('static', filename=filename) }}" alt="Original retinal image">
+                            </div>
+                            <div class="image-item">
+                                <h3>Enhanced Image (CLAHE)</h3>
+                                <img src="{{ url_for('static', filename=clahe_image) }}" alt="Enhanced retinal image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="cdr-tab">
+                        <div class="analysis-intro">
+                            <h2><i class="fas fa-eye"></i> Cup-to-Disc Ratio Analysis</h2>
+                            <p>The Cup-to-Disc Ratio (CDR) is a key indicator in assessing retinal health. It measures the ratio between the optic cup and optic disc diameters. An elevated CDR (>0.6) may indicate increased cardiovascular risk.</p>
+                        </div>
+                        
+                        <div class="image-grid">
+                            <div class="image-item">
+                                <h3>CDR Overlay</h3>
+                                <img src="{{ url_for('static', filename=overlay_image) }}" alt="CDR analysis overlay">
+                            </div>
+                        </div>
+                        <div class="measurement-interpretation">
+                            {% if cdr > 0.7 %}
+                                <div class="interpretation abnormal">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    Elevated CDR (>0.7) indicates significant optic nerve changes
+                                </div>
+                            {% elif cdr > 0.6 %}
+                                <div class="interpretation warning">
+                                    <i class="fas fa-info-circle"></i>
+                                    Moderately elevated CDR (0.6-0.7) suggests possible changes
+                                </div>
+                            {% else %}
+                                <div class="interpretation normal">
+                                    <i class="fas fa-check-circle"></i>
+                                    Normal cup-to-disc ratio (≤0.6)
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="vessel-tab">
+                        <div class="analysis-intro">
+                            <h2><i class="fas fa-project-diagram"></i> Vessel Analysis</h2>
+                            <p>Analysis of retinal blood vessels provides important indicators of cardiovascular health. We examine vessel segmentation, artery-vein classification, and vessel network complexity.</p>
+                        </div>
+                        
+                        <div class="image-grid">
+                            {% if vessel_seg_image %}
+                            <div class="image-item">
+                                <h3>Vessel Segmentation</h3>
+                                <img src="{{ url_for('static', filename=vessel_seg_image) }}" alt="Vessel segmentation">
+                            </div>
+                            {% endif %}
+                            
+                            {% if av_class_image %}
+                            <div class="image-item">
+                                <h3>Artery-Vein Classification</h3>
+                                <img src="{{ url_for('static', filename=av_class_image) }}" alt="Artery-vein classification">
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="measurement-interpretation">
+                            {% if avr %}
+                                {% if avr < 0.67 %}
+                                    <div class="interpretation abnormal">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        Narrowed AVR (<0.67) suggests arteriolar narrowing
+                                    </div>
+                                {% elif avr > 0.75 %}
+                                    <div class="interpretation abnormal">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        Widened AVR (>0.75) indicates venular dilation
+                                    </div>
+                                {% else %}
+                                    <div class="interpretation normal">
+                                        <i class="fas fa-check-circle"></i>
+                                        Normal arteriovenous ratio (0.67-0.75)
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="fd-tab">
+                        <div class="analysis-intro">
+                            <h2><i class="fas fa-shapes"></i> Fractal Dimension Analysis</h2>
+                            <p>Fractal Dimension (FD) quantifies the complexity of retinal vasculature. A Fractal Dimension value below 1.3 is a critical indicator of cardiovascular disease risk, as it signifies significantly reduced vascular complexity.</p>
+                        </div>
+                        
+                        <div class="image-grid">
+                            {% if fd_image %}
+                            <div class="image-item">
+                                <h3>Fractal Dimension Visualization</h3>
+                                <img src="{{ url_for('static', filename=fd_image) }}" alt="Fractal dimension analysis">
+                                <div class="fd-meta">
+                                    <div class="fd-value">
+                                        <i class="fas fa-ruler-combined"></i>
+                                        Calculated FD: {{ "%.3f"|format(fd) if fd else 'N/A' }}
+                                    </div>
+                                    {% if fd %}
+                                    <div class="fd-interpretation {{ 'abnormal' if fd < 1.3 else 'normal' }}">
+                                        {% if fd < 1.3 %}
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        Reduced vascular complexity
+                                        {% else %}
+                                        <i class="fas fa-check-circle"></i>
+                                        Normal vascular complexity
+                                        {% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-actions">
+            <a href="{{ url_for('assessment') }}" class="btn btn-primary">
+                <i class="fas fa-upload"></i> Analyze Another Image
+            </a>
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">
+                <i class="fas fa-home"></i> Return Home
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    button.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

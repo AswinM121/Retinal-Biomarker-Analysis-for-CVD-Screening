@@ -1,0 +1,27 @@
+/* Math Formulas Styling */
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2em;
+    text-align: center;
+}
+
+.fraction .top {
+    display: block;
+    padding: 0.1em;
+    border-bottom: 1px solid currentColor;
+}
+
+.fraction .bottom {
+    display: block;
+    padding: 0.1em;
+}
+
+.equation {
+    font-size: 1.2em;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}

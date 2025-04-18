@@ -1,0 +1,13 @@
+/* Section Headers */
+.section-header h1 {
+    font-size: 1.5rem !important;
+    color: var(--primary) !important;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.section-header i {
+    color: var(--primary);
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}

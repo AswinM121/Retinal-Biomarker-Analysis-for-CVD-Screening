@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVR Details - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/section-headers.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fraction {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
+        .fraction .top, .fraction .bottom {
+            display: block;
+            padding: 0.1em;
+            font-size: 80%;
+        }
+        .fraction .bottom {
+            border-top: 1px solid;
+        }
+        .avr-details {
+            padding-top: 80px; /* Add padding to prevent content from being hidden under nav */
+        }
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+        .container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="avr-details">
+            <div class="section-header">
+                <i class="fas fa-heart"></i>
+                <h1>Arteriovenous Ratio (AVR) Calculation for CVD Risk Assessment</h1>
+            </div>
+            <p class="intro">The Arteriovenous Ratio (AVR) is a critical retinal biomarker used to evaluate cardiovascular risk by comparing the diameters of arterioles and venules. The AVR computation pipeline involves three major stages: vessel segmentation, artery-vein classification, and diameter-based AVR calculation.</p>
+
+            <div class="process-section">
+                <h2><i class="fas fa-microscope"></i> 1. Vessel Segmentation — Using TCDDUnet</h2>
+                <p>Retinal vessel segmentation is performed using TCDDUnet (Transformer and Convolutional Dual-Decoder U-Net). Unlike traditional U-Net, TCDDUnet overcomes limitations in long-range dependencies and thin vessel detection by employing:</p>
+                <ul>
+                    <li>A dual-decoder architecture for capturing both coarse and fine vascular details.</li>
+                    <li>Enhanced skip connections and feature fusion for improved spatial resolution.</li>
+                </ul>
+                <p>This step extracts all retinal vessels, distinguishing them from the background for further analysis.</p>
+            </div>
+
+            <div class="process-section">
+                <h2><i class="fas fa-brain"></i> 2. Artery-Vein Classification — Using RRWNet</h2>
+                <p>Classifying segmented vessels into arteries and veins is achieved using the Recursive Refinement Network (RRWNet):</p>
+                <ul>
+                    <li>The Base Subnetwork provides an initial segmentation map.</li>
+                    <li>The Recursive Refinement Subnetwork iteratively corrects mislabeling and topological inconsistencies by learning vessel connectivity patterns.</li>
+                </ul>
+                <p>This ensures high-accuracy labeling, critical for reliable AVR calculation.</p>
+            </div>
+
+            <div class="process-section">
+                <h2><i class="fas fa-calculator"></i> 3. AVR Computation Pipeline</h2>
+                
+                <h3>a. Vessel Centerline Extraction</h3>
+                <ul>
+                    <li><strong>Skeletonization:</strong> The Zhang-Suen thinning algorithm reduces vessels to 1-pixel wide centerlines.</li>
+                    <li><strong>Bifurcation Removal:</strong> Morphological operations remove vessel junctions that could distort diameter estimation.</li>
+                    <li><strong>Smoothing:</strong> Gaussian filtering and cubic spline interpolation create continuous, noise-free centerlines.</li>
+                </ul>
+
+                <h3>b. Edge Detection and Diameter Measurement</h3>
+                <ul>
+                    <li><strong>Normal Line Estimation:</strong> Normals are drawn at each centerline point using local gradient direction.</li>
+                    <li><strong>Intensity Profiling:</strong> Vessel cross-sections are analyzed by detecting intensity transitions using the first derivative.</li>
+                    <li><strong>Clustering (K-means):</strong> Edge boundaries are defined by clustering pixels into vessel interior, edge, and background.</li>
+                </ul>
+
+                <h3>c. Diameter Refinement</h3>
+                <ul>
+                    <li><strong>Smoothing:</strong> A moving average filter reduces fluctuations in raw diameter measurements.</li>
+                    <li><strong>Outlier Removal:</strong> Diameters beyond ±2 standard deviations from the local mean are discarded.</li>
+                    <li><strong>Weighted Averaging:</strong> Confidence scores from segmentation are used to weight diameters for improved robustness.</li>
+                </ul>
+            </div>
+
+            <div class="formula-section">
+                <h2><i class="fas fa-square-root-alt"></i> AVR Formula</h2>
+                <div class="formula">
+                    <p class="equation">
+                        AVR = 
+                        <span class="fraction">
+                            <span class="top">D<sub>a</sub></span>
+                            <span class="bottom">D<sub>v</sub></span>
+                        </span>
+                    </p>
+                    <p>Where:</p>
+                    <ul>
+                        <li>Da = Average diameter of selected arterioles</li>
+                        <li>Dv = Average diameter of selected venules</li>
+                    </ul>
+                    <p class="note">Only vessel segments within Zone B (0.5–1.0 optic disc diameters from the optic nerve head) are used for consistency and comparability.</p>
+                </div>
+            </div>
+
+            <div class="risk-thresholds">
+                <h2><i class="fas fa-chart-line"></i> AVR Risk Thresholds</h2>
+                <div class="threshold-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>AVR Value</th>
+                                <th>Interpretation</th>
+                                <th>Cardiovascular Risk</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="nomal">
+                                <td> 0.67 – 0.75</td>
+                                <td>Normal AVR</td>
+                                <td>Low Risk</td>
+                            </tr>
+                            <tr class="moderate">
+                                <td>0.55 – 0.66</td>
+                                <td>Mild Arteriolar Narrowing</td>
+                                <td>Moderate Risk</td>
+                            </tr>
+                            <tr class="high">
+                                <td>< 0.55 or > 0.75</td>
+                                <td>Severe Arteriolar Narrowing</td>
+                                <td>High Risk</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">These thresholds are derived from clinical studies linking AVR narrowing with increased cardiovascular disease (CVD) risk.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@cvdrisk.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CVD Risk Assessment. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

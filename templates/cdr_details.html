@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDR Details - CVD Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/section-headers.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/math-formulas.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cdr-details {
+            padding-top: 80px;
+        }
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+        .container {
+            position: relative;
+        }
+        .fraction {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
+        .fraction .top, .fraction .bottom {
+            display: block;
+            padding: 0.1em;
+            font-size: 80%;
+        }
+        .fraction .bottom {
+            border-top: 1px solid;
+        }
+        .equation {
+            text-align: left;
+            margin: 1em 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Amrita_Vishwa_Vidyapeetham_-_Logo_Icon.svg.png') }}" alt="Amrita University Logo" class="university-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>CVD Assessment</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('assessment') }}">Assessment</a></li>
+                <li><a href="{{ url_for('who_we_serve') }}">Who We Serve</a></li>
+                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="cdr-details">
+            <div class="section-header">
+                <i class="fas fa-eye"></i>
+                <h1>Optic Cup-Disc Ratio (CDR) Calculation for CVD Risk Assessment</h1>
+            </div>
+
+            <div class="content-section">
+                <p class="intro">The Cup-to-Disc Ratio (CDR) is a vital biomarker used to assess cardiovascular disease (CVD) risk. A CDR greater than 0.6 is a clinical indicator of potential cardiovascular and neurological abnormalities.</p>
+
+                <div class="process-section">
+                    <h2><i class="fas fa-microscope"></i> 1. Preprocessing & Boundary Extraction — YR-Adapter</h2>
+                    <p>To prepare the retinal images for segmentation:</p>
+                    <h3>Grayscale Conversion & Normalization:</h3>
+                    <ul>
+                        <li>Retinal images are converted into grayscale and normalized to ensure uniform contrast.</li>
+                    </ul>
+                    <h3>Boundary Detection (YR-Adapter):</h3>
+                    <ul>
+                        <li>Each row of the image is scanned to identify the leftmost and rightmost boundary points of both optic cup and disc.</li>
+                        <li>Boundary points are then sorted clockwise to form continuous, smooth contours required for precise shape reconstruction.</li>
+                    </ul>
+                    <p>This preprocessing ensures the input to the segmentation model reflects anatomically accurate optic structure geometry.</p>
+                </div>
+
+                <div class="process-section">
+                    <h2><i class="fas fa-brain"></i> 2. Segmentation — YOLOv8 Model</h2>
+                    <p>A modified YOLOv8 segmentation model is used to detect and outline the optic disc and cup. Key improvements include:</p>
+                    <ul>
+                        <li>Architecture adapted to produce high-resolution segmentation masks.</li>
+                        <li>Ability to capture global shape context and fine vessel margins.</li>
+                        <li>Ground truth annotations created using the CVAT (Computer Vision Annotation Tool) with polygon-based precision.</li>
+                    </ul>
+                </div>
+
+                <div class="process-section">
+                    <h2><i class="fas fa-calculator"></i> 3. Cup-to-Disc Ratio (CDR) Computation</h2>
+                    <p>Following segmentation, the areas of the optic cup and disc are calculated by pixel counting from the segmentation masks.</p>
+                    
+                    <div class="formula-section">
+                        <h3><i class="fas fa-square-root-alt"></i> CDR Formula</h3>
+                        <div class="formula">
+                            <p class="equation">
+                                CDR = 
+                                <span class="fraction">
+                                    <span class="top">S<sub>OC</sub></span>
+                                    <span class="bottom">S<sub>OD</sub></span>
+                                </span>
+                            </p>
+                            <p>Where:</p>
+                            <ul>
+                                <li>S<sub>OC</sub> = Area of the segmented optic cup</li>
+                                <li>S<sub>OD</sub> = Area of the segmented optic disc</li>
+                            </ul>
+                            <p class="note">A value greater than 0.6 suggests elevated CVD risk, warranting further clinical evaluation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>&copy; 2024 CVD Risk Assessment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
